@@ -2,8 +2,8 @@
 
 # link all my configs via symlink
 # zsh configs
-ln -s ~/Documents/dotfiles/.zsh/.zshrc.backup ~/.zshrc
-ln -s ~/Documents/dotfiles/.zsh/.zshenv.backup ~/.zshenv
+ln -s ~/Documents/dotfiles/.zsh/.zshrc ~/.zshrc
+ln -s ~/Documents/dotfiles/.zsh/.zshenv ~/.zshenv
 ln -s ~/Documents/dotfiles/.zsh/plugins/ ~/.zsh
 
 # program configs
