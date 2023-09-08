@@ -13,3 +13,6 @@ ln -s ~/Documents/dotfiles/.config/kitty/ ~/.config
 
 # fonts
 sudo ln -s ~/Documents/dotfiles/fonts /usr/share
+
+# wallpaper
+ln -s ~/Documents/dotfiles/wallpaper ~/Pictures/wallpaper
