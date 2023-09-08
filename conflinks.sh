@@ -12,7 +12,7 @@ ln -s ~/Documents/dotfiles/.config/nvim/ ~/.config
 ln -s ~/Documents/dotfiles/.config/kitty/ ~/.config
 
 # fonts
-sudo ln -s ~/Documents/dotfiles/fonts /usr/share
+sudo ln -s ~/Documents/dotfiles/fonts/ /usr/share
 
 # wallpaper
-ln -s ~/Documents/dotfiles/wallpaper ~/Pictures/wallpaper
+ln -s ~/Documents/dotfiles/wallpaper/ ~/Pictures/wallpaper
