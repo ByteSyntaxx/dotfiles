@@ -97,8 +97,8 @@ label:focus {
 }
 
 #network.disconnected, #network.disabled {
-    box-shadow: inset 0 -2px #963296;
-    color: #963296;
+    box-shadow: inset 0 -2px #750075;
+    color: #750075;
 }
 
 #tray {

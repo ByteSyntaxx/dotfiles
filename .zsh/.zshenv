@@ -1,8 +1,8 @@
 ## DO SOME PFETCH SETTINGS ##
-export PF_COL1="4"                                               # PFETCH VARIABLE COLOR
-export PF_COL2="9"                                               # PFETCH INFORMATION COLOR
-export PF_COL3="6"                                               # PFETCH TITLE COLOR
-export PF_ASCII="arco"                                           # PFETCH ASCII SYMBOL
+export PF_COL1="4"                                                  # PFETCH VARIABLE COLOR
+export PF_COL2="9"                                                  # PFETCH INFORMATION COLOR
+export PF_COL3="6"                                                  # PFETCH TITLE COLOR
+export PF_ASCII="arco"                                              # PFETCH ASCII SYMBOL
 export PF_INFO="ascii title os host kernel uptime pkgs memory"   # SETTING THE INFORMATION DISPLAY
 
 ## PATH TO oh-my-zsh INSTALLATION ##
@@ -14,7 +14,7 @@ ZSH_THEME="robbyrussell"
 ## ALIASES ##
 
 # shell aliases
-alias reload='exec zsh && source .zshenv'
+alias reload='exec zsh'
 alias clearhist='cat /dev/null > ~/.zsh_history && history -c'
 alias clearcache="rm -rf $HOME/.cache/*"
 

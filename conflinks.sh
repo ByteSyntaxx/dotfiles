@@ -10,9 +10,3 @@ ln -s ~/Documents/dotfiles/.zsh/plugins/ ~/.zsh
 ln -s ~/Documents/dotfiles/.config/hypr/ ~/.config
 ln -s ~/Documents/dotfiles/.config/nvim/ ~/.config
 ln -s ~/Documents/dotfiles/.config/kitty/ ~/.config
-
-# fonts
-sudo ln -s ~/Documents/dotfiles/fonts /usr/share
-
-# wallpaper
-ln -s ~/Documents/dotfiles/wallpaper ~/Pictures
