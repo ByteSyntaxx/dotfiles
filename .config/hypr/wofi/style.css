@@ -15,7 +15,7 @@
 
 #input {
     background: rgba(0, 0, 0, 0.35);
-    border: 0px solid #c896ff;
+    border: 0px solid #FF8282;
     padding: 8px 12px;
 }
 
@@ -41,8 +41,8 @@
 }
 
 #entry:selected {
-    background-color: #c896ff;
-    background: linear-gradient(90deg, #c896ff, #9696ff)
+    background-color: linear-gradient(90deg, #FF8282, #FF6464);
+    background: linear-gradient(90deg, #FF8282, #FF6464)
 }
 
 #input, #entry:selected {

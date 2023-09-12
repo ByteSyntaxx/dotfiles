@@ -2215,6 +2215,6 @@ map shift+cmd+/ open_url https://sw.kovidgoyal.net/kitty/
 
 
 # BEGIN_KITTY_THEME
-# nordfox (priv)
+# Chalkboard-Priv
 include current-theme.conf
 # END_KITTY_THEME
