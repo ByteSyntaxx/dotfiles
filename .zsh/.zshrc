@@ -69,3 +69,4 @@ alias microcode='grep . /sys/devices/system/cpu/vulnerabilities/*'              
 alias bupskel='cp -Rf /etc/skel ~/.skel-backup-$(date +%Y.%m.%d-%H.%M.%S)'                        # backup /etc/skel to hidden folder in home/user
 
 pfetch
+export PATH=$PATH:/home/bytesyntaxx/.spicetify

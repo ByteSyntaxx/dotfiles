@@ -41,8 +41,8 @@
 }
 
 #entry:selected {
-    background-color: linear-gradient(90deg, #FF8282, #FF6464);
-    background: linear-gradient(90deg, #FF8282, #FF6464)
+    background-color: linear-gradient(90deg, #B496D2, #7864A0);
+    background: linear-gradient(90deg, #B496D2, #7864A0)
 }
 
 #input, #entry:selected {

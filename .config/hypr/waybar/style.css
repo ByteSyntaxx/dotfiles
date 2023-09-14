@@ -1,10 +1,12 @@
+@import "themes/mocha.css";
+
 * {
     font-family: "JetBrainsMono", "Noto Sans", "Roboto Condensed", sanf-serif;
     font-size: 16px;
 }
 
 window#waybar {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: shade(@base, 0.8);
 }
 
 window#waybar.hidden {
@@ -33,8 +35,8 @@ button:hover {
 }
 
 #workspaces button.active {
-    box-shadow: inset 0 -2px #FF9C5F;
-    color: #FF9C5F
+    box-shadow: inset 0 -2px shade(@peach, 1.0);
+    color: shade(@peach, 1.0);
 }
 
 #cpu,
@@ -60,50 +62,46 @@ button:hover {
     margin-right: 0;
 }
 
-#clock {
-    background-color: #64727D;
-}
-
 label:focus {
     background-color: #000000;
 }
 
 #cpu {
-    box-shadow: inset 0 -2px #65E8FF;
-    color: #65E8FF;
+    box-shadow: inset 0 -2px shade(@sapphire, 1.0);
+    color: shade(@sapphire, 1.0);
 }
 
 #memory {
-    box-shadow: inset 0 -2px #FF8297;
-    color: #FF8297;
+    box-shadow: inset 0 -2px shade(@mauve, 1.0);
+    color: shade(@mauve, 1.0);
 }
 
 #disk {
-    box-shadow: inset 0 -2px #8999FF;
-    color: #8999FF;
+    box-shadow: inset 0 -2px shade(@maroon, 1.0);
+    color: shade(@maroon, 1.0);
     margin-right: 6px;
 }
 
 #network {
-    box-shadow: inset 0 -2px #89B4FA;
-    color: #89B4FA;
+    box-shadow: inset 0 -2px shade(@lavender, 1.0);
+    color: shade(@lavender, 1.0);
 }
 
 #custom-power {
-    box-shadow: inset 0 -2px #FF5C77;
-    color: #FF5C77;
+    box-shadow: inset 0 -2px shade(@rosewater, 1.0);
+    color: shade(@rosewater, 1.0);
     margin-right: 4px;
     font-size: 20px;
 }
 
 #network.disconnected, #network.disabled {
-    box-shadow: inset 0 -2px #750075;
-    color: #750075;
+    box-shadow: inset 0 -2px shade(@red, 1.0);
+    color: shade(@red, 1.0);
 }
 
 #tray {
-    box-shadow: inset 0 -2px #8A99FF;
-    color: #8A99FF;
+    box-shadow: inset 0 -2px shade(@flamingo, 1.0);
+    color: shade(@flamingo, 1.0);
     margin-right: 12px;
 }
 
@@ -113,5 +111,5 @@ label:focus {
 
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
-    background-color: #eb4d4b;
+    background-color: shade(@pink, 1.0);
 }
