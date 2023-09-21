@@ -3,7 +3,7 @@ export PF_COL1="4"                                                  # PFETCH VAR
 export PF_COL2="9"                                                  # PFETCH INFORMATION COLOR
 export PF_COL3="6"                                                  # PFETCH TITLE COLOR
 export PF_ASCII="arco"                                              # PFETCH ASCII SYMBOL
-export PF_INFO="ascii title os host kernel uptime pkgs memory"   # SETTING THE INFORMATION DISPLAY
+export PF_INFO="ascii title os host kernel uptime pkgs memory"      # SETTING THE INFORMATION DISPLAY
 
 ## PATH TO oh-my-zsh INSTALLATION ##
 export ZSH=/usr/share/oh-my-zsh/
@@ -16,10 +16,10 @@ ZSH_THEME="robbyrussell"
 # shell aliases
 alias reload='exec zsh'
 alias clearhist='cat /dev/null > ~/.zsh_history && history -c'
-alias clearcache="rm -rf $HOME/.cache/*"
+alias clearcache='rm -rf $HOME/.cache/*'
 
 # updating the system
-alias updateparu="paru -Syu --noconfirm"                        # update paru package list
+alias updateparu='paru -Syu --noconfirm'                            # update paru package list
 alias updatesys='sudo pacman -Syyu --noconfirm'
 alias updatekeys='sudo pacman -Syu --noconfirm'
 
