@@ -6,10 +6,6 @@ source ~/.zsh/plugins/completions/zsh-completions.plugin.zsh
 source ~/.zsh/plugins/suggestions/zsh-autosuggestions.plugin.zsh
 source ~/.zsh/plugins/highlighting/zsh-syntax-highlighting.plugin.zsh
 
-if [ -f $ZSH/oh-my-zsh.sh ]; then
-  source $ZSH/oh-my-zsh.sh
-fi
-
 ## CLEANING HOME FOLDER ##
 if [ -f "/home/bytesyntaxx/.zcompdump-arcolinux-5.9" ]; then
   rm -rf ~/.zcompdump
@@ -21,16 +17,22 @@ fi
 export PAGER='most'
 export PATH="$HOME/.local/bin:$PATH"
 
-unsetopt SHARE_HISTORY
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+bindkey "${terminfo[kdch1]}" delete-char
+
+HISTSIZE=750
+SAVEHIST=750
+HISTFILE=~/.zsh_history
+
+setopt autocd
+setopt appendhistory
 
 ## SET SOME ALIASES ##
 
-# editor alias 
-alias vim='nvim'
-
 # change 'ls' to 'exa'
-alias ls='exa -lah --color=always --icons --group-directories-first'
-alias lsdir='exa -dlah */ --color=always --icons --group-directories-first'
+alias ls='eza -lah --color=always --icons --group-directories-first'
+alias lsdir='eza -dlah */ --color=always --icons --group-directories-first'
 
 # colorize grep output
 alias grep='grep --color=auto'
@@ -49,10 +51,9 @@ alias sprs='sudo pacman -Rs'                                                    
 alias spsii='sudo pacman -Sii'                                                                    # show package info
 
 # get fastest mirrors
-alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
-alias mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pacman.d/mirrorlist"
-alias mirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"
-alias mirrors="sudo reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist"
+alias fastmirror="sudo reflector --verbose --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist && sudo pacman -Syy"
+alias backupmirror="sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak"
+alias restoremirror="sudo cp /etc/pacman.d/mirrorlist.bak /etc/pacman.d/mirrorlist"
 
 # system
 alias rmlogoutlock="sudo rm /tmp/arcologout.lock"                                                 # arcolinux logout unlock
@@ -68,5 +69,5 @@ alias audio="pactl info | grep 'Server Name'"                                   
 alias microcode='grep . /sys/devices/system/cpu/vulnerabilities/*'                                # check vulnerabilities microcode 
 alias bupskel='cp -Rf /etc/skel ~/.skel-backup-$(date +%Y.%m.%d-%H.%M.%S)'                        # backup /etc/skel to hidden folder in home/user
 
-pfetch
-export PATH=$PATH:/home/bytesyntaxx/.spicetify
+neofetch
+eval "$(starship init zsh)"
