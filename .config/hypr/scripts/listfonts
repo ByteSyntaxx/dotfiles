@@ -1,6 +1,3 @@
 #!/bin/sh
 
-config=$HOME/.config/hypr/wofi/config
-style=$HOME/.config/hypr/wofi/style.css
-
-choice=$(fc-list | awk '{print $1}' | sed 's/://g' | wofi -c $config -s $style -d -p 'Fonts: ')
+choice=$(fc-list | awk '{print $1}' | sed 's/://g' | wofi -d -p 'Fonts: ')
