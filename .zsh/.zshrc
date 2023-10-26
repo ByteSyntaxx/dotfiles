@@ -2,9 +2,9 @@
 source .zshenv
 
 ## LOAD ALL ZSH PLUGINS ##
-source ~/.zsh/plugins/completions/zsh-completions.plugin.zsh
-source ~/.zsh/plugins/suggestions/zsh-autosuggestions.plugin.zsh
-source ~/.zsh/plugins/highlighting/zsh-syntax-highlighting.plugin.zsh
+source ~/.zsh/completions/zsh-completions.plugin.zsh
+source ~/.zsh/suggestions/zsh-autosuggestions.plugin.zsh
+source ~/.zsh/highlighting/zsh-syntax-highlighting.plugin.zsh
 
 ## CLEANING HOME FOLDER ##
 if [ -f "/home/bytesyntaxx/.zcompdump-arcolinux-5.9" ]; then
