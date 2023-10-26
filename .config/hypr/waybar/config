@@ -11,6 +11,7 @@
   "margin-left": 0,
   "margin-right": 0,
 
-  "modules-left": ["wlr/workspaces"],
-  "modules-right": ["network","memory", "disk", "tray"]
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["network","memory", "disk"],
+  "modules-right": ["tray"]
 }
