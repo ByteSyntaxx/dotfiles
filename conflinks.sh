@@ -14,6 +14,7 @@ ln -s ~/Documents/dotfiles/.zsh/.zlogin ~/.zlogin
 ln -s ~/Documents/dotfiles/.config/starship.toml ~/.config/starship.toml
 
 # program configs
+ln -s ~/Documents/dotfiles/.config/fish/ ~/.config
 ln -s ~/Documents/dotfiles/.config/hypr/ ~/.config
 ln -s ~/Documents/dotfiles/.config/nvim/ ~/.config
 ln -s ~/Documents/dotfiles/.config/wofi/ ~/.config

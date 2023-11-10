@@ -1,3 +1,4 @@
 if [ "$TTY" = "/dev/tty1" ]; then
-    Hyprland
+    setfont ter-v20b
+    fish
 fi
