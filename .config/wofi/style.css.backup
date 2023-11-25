@@ -5,7 +5,7 @@
 }
 
 #window {
-    background: rgba(29, 32, 32, 0.5);
+    background: rgba(0, 0, 0, 0.35);
     border-radius: 0px;
 }
 
@@ -41,8 +41,8 @@
 }
 
 #entry:selected {
-    background-color: linear-gradient(90deg,  #80750E, #60570A);
-    background: linear-gradient(90deg,  #80750E, #60570A)
+    background-color: linear-gradient(90deg, #B496D2, #7864A0);
+    background: linear-gradient(90deg, #B496D2, #7864A0)
 }
 
 #input, #entry:selected {
