@@ -6,7 +6,7 @@
 }
 
 window#waybar {
-    background-color: shade(#303030, 0.9);
+    background-color: shade(@base, 0.85);
 }
 
 window#waybar.hidden {
