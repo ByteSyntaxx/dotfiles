@@ -6,6 +6,7 @@
   "passthrough": false,
   "position": "top",
   "spacing": 5,
+  "opacity": 0.75,
   "fixed-center": true,
   "ipc": true,
   "margin-left": 0,

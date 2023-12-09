@@ -6,7 +6,10 @@
 }
 
 window#waybar {
-    background-color: shade(@base, 0.85);
+    background: transparent;
+    color: #1a1b26;
+    transition-property: background-color;
+    transition-duration: .5s;
 }
 
 window#waybar.hidden {
