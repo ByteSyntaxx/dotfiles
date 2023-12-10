@@ -1,6 +1,8 @@
+## CHANGE SOME FISH SETTINGS ##
+set fish_greeting 
+
 ## SET SOME ALIASES ##
 
-## SET SOME OTHER ALIASES ##
 # change "ls" to "exa"
 alias ls="eza -lah --color=always --icons --group-directories-first"
 alias lsdir="eza -dlah */ --color=always --icons --group-directories-first"
