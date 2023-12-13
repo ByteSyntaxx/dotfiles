@@ -41,7 +41,6 @@
 }
 
 #entry:selected {
-    background-color: linear-gradient(90deg, #6464C8, #8e8eff);
     background: linear-gradient(90deg, #6464C8, #8e8eff)
 }
 

@@ -27,7 +27,6 @@ alias spsii="sudo pacman -Sii"                                                  
 alias stdupdate="sudo pacman -Syyu"                                                               # update only standard packages
 alias aurupdate="paru -Sua"                                                                       # update only aur packages
 alias allupdate="paru -Syyu"                                                                      # update standard & aur packages
-alias cleanup="sudo pacman -Rns $(pacman -Qtdq)"                                                  # remove unused packages
 alias pacunlock="sudo rm /var/lib/pacman/db.lck"                                                  # remove pacman lock
 
 
