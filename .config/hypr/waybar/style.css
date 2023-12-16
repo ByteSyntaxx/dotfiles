@@ -1,15 +1,14 @@
-@import "mocha.css";
-
 * {
-    font-family: "JetBrainsMono", "Noto Sans", "Roboto Condensed", sanf-serif;
     font-size: 16px;
+    font-weight: bold;
+    font-family: "JetBrainsMono", "Noto Sans", "Roboto Condensed", sans-serif;
 }
 
 window#waybar {
-    background: transparent;
     color: #1a1b26;
-    transition-property: background-color;
+    background: transparent;
     transition-duration: .5s;
+    transition-property: background-color;
 }
 
 window#waybar.hidden {
@@ -17,9 +16,9 @@ window#waybar.hidden {
 }
 
 button {
-    box-shadow: inset 0 -2px transparent;
     border: none;
     border-radius: 0;
+    box-shadow: inset 0 -2px transparent;
 }
 
 button:hover {
@@ -28,29 +27,25 @@ button:hover {
 }
 
 #workspaces {
-    font-weight: 600;
-    margin: 4px 0px;
+    margin: 3px 0px;
     padding: 0px 4px;
+    color: rgb(141, 201, 253);
 }
 
 #workspaces button {
     margin-right: 2px;
+    color: aliceblue;
 }
 
 #workspaces button.active {
-    box-shadow: inset 0 -2px shade(@peach, 1.0);
-    color: shade(@peach, 1.0);
+    color: shade(#fab387, 1.0);
+    box-shadow: inset 0 -2px shade(#fab387, 1.0);
 }
 
-#cpu,
 #tray,
 #disk,
-#clock,
 #memory,
-#network,
-#custom-menu,
-#custom-power {
-    font-weight: 600;
+#network {
     margin: 4px 0px;
     padding: 0px 4px;
 }
@@ -65,47 +60,31 @@ button:hover {
     margin-right: 0;
 }
 
-label:focus {
-    background-color: #000000;
-}
-
-#cpu {
-    box-shadow: inset 0 -2px shade(@sapphire, 1.0);
-    color: shade(@sapphire, 1.0);
-}
-
 #memory {
-    box-shadow: inset 0 -2px shade(@mauve, 1.0);
-    color: shade(@mauve, 1.0);
+    color: shade(#cba6f7, 1.0);
+    box-shadow: inset 0 -2px shade(#cba6f7, 1.0);
 }
 
 #disk {
-    box-shadow: inset 0 -2px shade(@maroon, 1.0);
-    color: shade(@maroon, 1.0);
     margin-right: 6px;
+    color: shade(#eba0ac, 1.0);
+    box-shadow: inset 0 -2px shade(#eba0ac, 1.0);
 }
 
 #network {
-    box-shadow: inset 0 -2px shade(@lavender, 1.0);
-    color: shade(@lavender, 1.0);
-}
-
-#custom-power {
-    box-shadow: inset 0 -2px shade(@rosewater, 1.0);
-    color: shade(@rosewater, 1.0);
-    margin-right: 4px;
-    font-size: 20px;
+    color: shade(#b4befe, 1.0);
+    box-shadow: inset 0 -2px shade(#b4befe, 1.0);
 }
 
 #network.disconnected, #network.disabled {
-    box-shadow: inset 0 -2px shade(@red, 1.0);
-    color: shade(@red, 1.0);
+    color: shade(#f38ba8, 1.0);
+    box-shadow: inset 0 -2px shade(#f38ba8, 1.0);
 }
 
 #tray {
-    box-shadow: inset 0 -2px shade(@flamingo, 1.0);
-    color: shade(@flamingo, 1.0);
     margin-right: 12px;
+    color: shade(#f2cdcd, 1.0);
+    box-shadow: inset 0 -2px shade(#f2cdcd, 1.0);
 }
 
 #tray > .passive {
@@ -114,5 +93,5 @@ label:focus {
 
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
-    background-color: shade(@pink, 1.0);
+    background-color: shade(#f5c2e7, 1.0);
 }

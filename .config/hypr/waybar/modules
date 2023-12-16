@@ -1,48 +1,4 @@
 {
-  "wlr/workspaces": {
-    "format": "{icon}",
-    "on-click": "activate",
-    "all-outputs": true,
-    "sort-by-number": true,
-    "format-icons": {
-      "1": "1",
-      "2": "2",
-      "3": "3",
-      "4": "4",
-      "5": "5",
-      "6": "6",
-      "7": "7",
-      "8": "8",
-      "9": "9",
-      "10": "10",
-      "focused": "",
-      "default": ""
-    },
-    "on-scroll-up": "hyprctl dispatch workspace e+1",
-    "on-scroll-down": "hyprctl dispatch workspace e-1"
-  },
-
-  "clock": {
-    "interval": 60,
-    "align": 0,
-    "rotate": 0,
-    "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
-    "format": "{:%d.%m.%Y | %H:%M}",
-    "format-alt": " {:%a %b %d, %G}"
-  },
-
-  "cpu": {
-    "interval": 1,
-    "format": "{icon0}{icon1}{icon2}{icon3} {usage:>2}% ",
-    "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]
-  },
-
-  "custom/power": {
-    "format": " ⏻ ",
-    "tooltip": false,
-    "on-click": "archlinux-logout"
-  },
-
   "disk": {
     "interval": 30,
     "format": " {free}"
