@@ -2,7 +2,7 @@
 set fish_greeting 
 
 ## SET SOME ALIASES ##
-
+ 
 # change "ls" to "exa"
 alias ls="eza -lah --color=always --icons --group-directories-first"
 alias lsdir="eza -dlah */ --color=always --icons --group-directories-first"
@@ -21,12 +21,13 @@ alias clearhist="cat /dev/null > ~/.zsh_history && history -c"
 alias sps="sudo pacman -S"                                                                        # install packages
 alias spr="sudo pacman -R"                                                                        # remove packages
 alias sprs="sudo pacman -Rs"                                                                      # remove package recursively
+alias sprns="sudo pacman -Rns"                                                                    # remove packages with dependencies
 alias spsii="sudo pacman -Sii"                                                                    # show package info
 
 # updating the packages and clear pacman cache...
-alias stdupdate="sudo pacman -Syyu"                                                               # update only standard packages
 alias aurupdate="paru -Sua"                                                                       # update only aur packages
 alias allupdate="paru -Syyu"                                                                      # update standard & aur packages
+alias stdupdate="sudo pacman -Syyu"                                                               # update only standard packages
 alias pacunlock="sudo rm /var/lib/pacman/db.lck"                                                  # remove pacman lock
 
 
@@ -48,7 +49,6 @@ alias rlfontcache="sudo fc-cache -fv"                                           
 alias clearcache="rm -rf $HOME/.cache/*"                                                          # clear the program cache
 alias paruskip="paru -S --mflags --skipinteg"                                                     # skip integrity check
 alias audio="pactl info | grep 'Server Name'"                                                     # audio check pulseaudio or pipewire
-alias rmlogoutlock="sudo rm /tmp/arcologout.lock"                                                 # arcolinux logout unlock
 alias whichvga="/usr/local/bin/arcolinux-which-vga"                                               # current working graphicscard
 alias microcode="grep . /sys/devices/system/cpu/vulnerabilities/*"                                # check vulnerabilities microcode 
 alias bupskel="cp -Rf /etc/skel ~/.skel-backup-$(date +%Y.%m.%d-%H.%M.%S)"                        # backup /etc/skel to hidden folder in home/user
