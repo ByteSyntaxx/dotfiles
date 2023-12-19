@@ -1,0 +1,27 @@
+{
+  "disk": {
+    "interval": 30,
+    "format": " {free}"
+  },
+
+  "memory": {
+    "interval": 10,
+    "format": "  {used:0.1f}G"
+  },
+
+  "network": {
+    "interval": 5,
+    "format-wifi": " {essid}",
+    "format-ethernet": "󰈀 {ipaddr}",
+    "format-linked": "󰈀 {ifname} (No IP)",
+    "format-disconnected": "睊 Disconnected",
+    "format-disabled": "睊 Disabled",
+    "format-alt": " {bandwidthUpBits} |  {bandwidthDownBits}",
+    "tooltip-format": " {ifname} via {gwaddr}"
+  },
+
+  "tray": {
+    "icon-size": 20,
+    "spacing": 6
+  }
+}

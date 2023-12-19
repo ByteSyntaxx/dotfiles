@@ -1,0 +1,12 @@
+## FONT MANAGEMENT ##
+font_family Roboto Mono Regular
+font_size 14
+term xterm-256color
+background_opacity 0.6
+include themes/tokyo-night.conf
+
+
+# BEGIN_KITTY_THEME
+# One Half Dark
+include current-theme.conf
+# END_KITTY_THEME

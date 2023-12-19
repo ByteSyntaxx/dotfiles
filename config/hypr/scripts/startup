@@ -1,0 +1,11 @@
+#!/bin/bash
+
+SCRIPTSDIR=$HOME/.config/hypr/scripts
+
+# Apply themes
+${SCRIPTSDIR}/gtkthemes &
+
+# Xauthority
+${SCRIPTSDIR}/xauthority &
+
+dex $HOME/.config/autostart/arcolinux-welcome-app.desktop &
