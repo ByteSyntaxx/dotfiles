@@ -1,9 +1,11 @@
-<<<<<<< HEAD
 #!/bin/bash
 
 git config --global user.email "95436329+ByteSyntaxx@users.noreply.github.com"
 git config --global user.name "ByteSyntaxx"
 git config --global pull.rebase false
-=======
->>>>>>> 5033a95da250e85aa706a9a8c9ef8f01c91224ca
 
+git remote remove origin
+git remote remove main
+
+git remote add origin git@github.com:ByteSyntaxx/dotfiles.git
+git remote add main
