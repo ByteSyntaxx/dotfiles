@@ -13,7 +13,7 @@ alias grep="grep --color=auto"
 # shell aliases
 alias reload="exec zsh"
 alias clearhist="cat /dev/null > ~/.zsh_history && history -c"
-
+alias hexinfo="/mnt/nvme1/asm/build/hexinfo "
 
 ## PACKAGE MANAGEMENT ##
 

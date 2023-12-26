@@ -18,4 +18,14 @@ return require('packer').startup(function(use)
             })
         end
     })
+    use {
+        "williamboman/mason.nvim",
+        "williamboman/mason-lspconfig",
+        "neovim/nvim-lspconfig",
+        config=function()
+            require('mason').setup()
+            require('mason-lspconfig').setup()
+        end
+    }
+    
 end)
