@@ -24,6 +24,7 @@
 }
 
 #img {
+    color: aliceblue;
     padding-right: 8px;
 }
 
@@ -40,7 +41,7 @@
 }
 
 #entry:selected {
-    background: linear-gradient(90deg, #7DA064, #649ea0)
+    background: linear-gradient(90deg, #6b994a, #214432)
 }
 
 #input {
