@@ -5,8 +5,7 @@
 }
 
 window#waybar {
-    color: #1a1b26;
-    background: transparent;
+    background-color: rgba(50, 50, 50, 0.5);
     transition-duration: .5s;
     transition-property: background-color;
 }

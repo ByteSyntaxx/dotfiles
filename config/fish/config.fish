@@ -12,7 +12,8 @@ alias grep="grep --color=auto"
 
 # shell aliases
 alias reload="exec zsh"
-alias clearhist="cat /dev/null > ~/.zsh_history && history -c"
+alias clearhist="history clear"
+alias cleartrash="rm -rf ~/.local/share/Trash/files && mkdir ~/.local/share/Trash/files"
 
 ## PACKAGE MANAGEMENT ##
 

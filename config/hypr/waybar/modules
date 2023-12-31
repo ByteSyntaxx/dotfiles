@@ -12,7 +12,7 @@
   "network": {
     "interval": 5,
     "format-wifi": " {essid}",
-    "format-ethernet": "󰈀 {ipaddr}",
+    "format-ethernet": "󰈀 {ipaddr}/24",
     "format-linked": "󰈀 {ifname} (No IP)",
     "format-disconnected": "睊 Disconnected",
     "format-disabled": "睊 Disabled",
