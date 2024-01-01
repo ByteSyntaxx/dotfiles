@@ -2,11 +2,9 @@
 font_family Roboto Mono Regular
 font_size 14
 term xterm-256color
-background_opacity 0.6
-include themes/tokyo-night.conf
-
+background_opacity 0.5
 
 # BEGIN_KITTY_THEME
-# One Half Dark
+# Custom-Theme
 include current-theme.conf
 # END_KITTY_THEME
