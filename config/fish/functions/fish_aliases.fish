@@ -1,7 +1,7 @@
 function fish_aliases
     ## SET SOME ALIASES ##
 
-    alias vim="nvim"
+    alias v="nvim"
 
     # change "ls" to "exa"
     alias ls="eza -lah --color=always --icons --group-directories-first"
