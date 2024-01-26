@@ -1,0 +1,19 @@
+max-history=10
+max-visible=3
+
+font=NotoSans NerdFont
+background-color=#252525
+text-color=#FFFFFF
+width=350
+height=150
+padding=10
+border-size=3
+border-color=#7DC864
+border-radius=5
+icons=1
+icon-path=/home/bytesyntaxx/.config/mako/notify.png
+icon-location=left
+text-alignment=center
+default-timeout=5000
+output=HDMI-A-1
+

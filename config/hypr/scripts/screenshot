@@ -1,0 +1,4 @@
+#!/bin/bash
+
+shots_dir="$HOME/Pictures/screenshots"
+grim -g "$(slurp)" "$shots_dir"/"$(date +%Y%m%d-%H%M%S)".png; notify-send "Screenshot saved!" "$(date +%Y%m%d-%H%M%S).png" --icon ~/.config/mako/notify.png

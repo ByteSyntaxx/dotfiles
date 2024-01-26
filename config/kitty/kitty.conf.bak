@@ -9,6 +9,6 @@ confirm_os_window_close 0
 window_margin_width 0
 window_padding-width 0
 # BEGIN_KITTY_THEME
-# Solarized-Dark-Patched
-include themes/Solarized-Dark-Patched.conf
+# Solarized-Dark-Patched-Black
+include current-theme.conf
 # END_KITTY_THEME
