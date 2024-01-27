@@ -10,7 +10,7 @@
   "lualine.nvim": { "branch": "master", "commit": "7d131a8d3ba5016229e8a1d08bf8782acea98852" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "b9084b1f42f790d6230dc66dbcb6bcc35b148552" },
   "mason.nvim": { "branch": "main", "commit": "dcd0ea30ccfc7d47e879878d1270d6847a519181" },
-  "nightfox.nvim": { "branch": "main", "commit": "2b1fd88b1828f980100b16fcb4fd3b1d7c2ab641" },
+  "nightfox.nvim": { "branch": "main", "commit": "57b8154aba0de8ced36722ea2674a7b97e4f468f" },
   "none-ls.nvim": { "branch": "main", "commit": "a311c7cc8f17543143a7482cdbe3a384c371d56a" },
   "nvim": { "branch": "main", "commit": "afab7ec2a79c7127627dede79c0018b6e45663d0" },
   "nvim-cmp": { "branch": "main", "commit": "538e37ba87284942c1d76ed38dd497e54e65b891" },
