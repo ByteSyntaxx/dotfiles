@@ -1,0 +1,14 @@
+# set some options
+
+set hidden true
+set icons true
+set drawbox
+set preview
+
+# custom keybinds
+map e editor
+
+# custom commands
+cmd editor ${{
+    nvim $f
+}}

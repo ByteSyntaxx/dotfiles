@@ -5,5 +5,6 @@ return {
 --    {'EdenEast/nightfox.nvim'},
 --    {'navarasu/onedark.nvim'},
 --    {'maxmx03/solarized.nvim'},
---    {'ellisonleao/gruvbox.nvim'}
+--    {'ellisonleao/gruvbox.nvim'},
+      {'neanias/everforest-nvim'}
 }

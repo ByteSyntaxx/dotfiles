@@ -14,4 +14,4 @@ style = "Regular"
 term = "xterm-256color"
 
 [window]
-opacity = 0.6
+opacity = 0.5
