@@ -47,7 +47,8 @@ function fish_aliases
 
     # system tools
     alias rlfontcache="sudo fc-cache -fv"                                                             # add new fonts
-    alias clearcache="rm -rf $HOME/.cache/*"                                                          # clear the program cache
+    alias clearcache="rm -rf $HOME/.cache/*"                                                          # clears the .cache directory
+    alias rup="sudo pacman -Rns $(pacman -Qdtq)"                                                      # removes unused packages
     alias paruskip="paru -S --mflags --skipinteg"                                                     # skip integrity check
     alias audio="pactl info | grep 'Server Name'"                                                     # audio check pulseaudio or pipewire
     alias whichvga="/usr/local/bin/arcolinux-which-vga"                                               # current working graphicscard

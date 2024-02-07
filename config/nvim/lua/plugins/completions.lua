@@ -46,4 +46,8 @@ return {
       })
     end,
   },
+  {
+    'hrsh7th/cmp-buffer'
+  }
+
 }

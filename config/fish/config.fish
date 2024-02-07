@@ -1,5 +1,5 @@
 ## CHANGE SOME FISH SETTINGS ##
-set fish_greeting 
+set fish_greeting ""
  
 export EDITOR=nvim
 
