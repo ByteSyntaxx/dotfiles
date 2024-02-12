@@ -3,3 +3,4 @@
 gsettings set org.gnome.desktop.interface cursor-theme \'Bibata-Modern-Ice\' &
 gsettings set org.gnome.desktop.interface cursor-size 20 &
 hyprctl setcursor Bibata-Modern-Ice 20 &
+hyprctl reload
