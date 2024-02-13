@@ -1,7 +1,7 @@
 {
   "disk": {
     "interval": 30,
-    "format": " {free}"
+    "format": " {free}"
   },
 
   "memory": {
