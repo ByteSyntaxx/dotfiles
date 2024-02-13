@@ -9,6 +9,6 @@ include themes/Solarized-Dark-Patched.conf
 
 
 # BEGIN_KITTY_THEME
-# Solarized-Dark-Patched
+# Catppuccin-Mocha
 include current-theme.conf
 # END_KITTY_THEME
