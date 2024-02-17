@@ -1,6 +1,16 @@
 #!/bin/bash
 
-gsettings set org.gnome.desktop.interface cursor-theme \'Bibata-Modern-Ice\' &
-gsettings set org.gnome.desktop.interface cursor-size 20 &
-hyprctl setcursor Bibata-Modern-Ice 20 &
-hyprctl reload
+COLORSCHEME='prefer-dark'
+CURSORTHEME='Bibata-Modern-Ice'
+
+SCHEMA='gsettings set org.gnome.desktop.interface'
+
+apply_themes() {
+    ${SCHEMA} colorscheme "$COLORSCHEME"
+    ${SCHEMA} cursor-theme "$CURSORTHEME"
+    ${SCHEMA} cursor-size 20
+    hyprctl setcursor Bibata-Modern-Ice 20
+    hyprctl reload
+}
+
+apply_themes

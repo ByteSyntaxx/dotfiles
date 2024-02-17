@@ -1,7 +1,7 @@
 * {
-    font-family: "Noto Sans";
+    font-family: 'JetBrainsMono';
     font-size: 14px;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 #window {
@@ -29,10 +29,12 @@
 }
 
 #text {
+    padding-top: 2px;
     color: #d6d6d6;
 }
 
 #text:selected {
+    padding-top: 2px;
     color: #2d3741;
 }
 

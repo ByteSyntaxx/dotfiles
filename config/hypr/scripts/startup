@@ -6,4 +6,5 @@ SCRIPTSDIR=$HOME/.config/hypr/scripts
 ${SCRIPTSDIR}/xauthority &
 ${SCRIPTSDIR}/globaltheme &
 mako &
-redshift &
+waybar &
+hyprpaper &
