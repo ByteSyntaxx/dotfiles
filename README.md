@@ -1,16 +1,16 @@
 # Dotfiles
 
-#### Installed Packages: ```hyprpland-dev wofi waybar neovim kitty kitty-shell-integration ttf-roboto```
-#### Installed Fonts: ```ttf-roboto ttf-jetbrains-mono ttf-firacode-nerd ttf-noto-nerd noto-fonts-emoji```
+#### Installed Packages: ```hyprland hyprpaper waybar wofi kitty kitty-terminfo kitty-shell-integration```
+#### Installed Fonts: ```ttf-firacode-nerd ttf-jetbrains-mono ttf-roboto ttf-roboto-mono```
 
 ## Screenshots
 | Hyprpland / Desktop |
 |:-:|
-|![image](screenshots/desktop-hyprland.png)|
+|![image](screenshots/hyprland.png)|
 
 | Kitty Terminal Emulator |
 |:-:|
-|![image](screenshots/kitty-terminal.png)|
+|![image](screenshots/terminal.png)|
 
 | Neovim Text Editor |
 |:-:|
