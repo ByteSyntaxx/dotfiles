@@ -30,8 +30,8 @@ function fish_aliases
     alias allupdate="paru -Syyu"                                                                      # update standard & aur packages
     alias stdupdate="sudo pacman -Syyu"                                                               # update only standard packages
     alias pacunlock="sudo rm /var/lib/pacman/db.lck"                                                  # remove pacman lock
-    alias cpaccache="paccache -rk3 && paccache -ruk0"                                                 # clears the pacman cache
-    alias rup="sudo pacman -Rns $(pacman -Qdtq)"                                                # removes unused packages
+    alias rpaccache="paccache -rk3 && paccache -ruk0"                                                 # clears the pacman cache
+    alias rup="sudo pacman -Rns $(pacman -Qdtq)"                                                      # removes unused packages
 
 
     ## MIRROR MANAGEMENT ##
