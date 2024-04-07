@@ -6,4 +6,4 @@ fish_aliases
 
 clear
 neofetch
-
+zoxide init fish | source

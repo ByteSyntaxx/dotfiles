@@ -36,8 +36,8 @@ button:hover {
 }
 
 #workspaces button.active {
-    color: shade(#E69875, 1.0);
-    box-shadow: inset 0 -2px shade(#E69875, 1.0);
+    color: aliceblue;
+    box-shadow: inset 0 -2px aliceblue;
 }
 
 #tray,
@@ -49,28 +49,28 @@ button:hover {
 }
 
 #memory {
-    color: shade(#D699B6, 1.0);
-    box-shadow: inset 0 -2px shade(#D699B6, 1.0);
+    color: shade(#88C0D0, 1.0);
+    box-shadow: inset 0 -2px shade(#88C0D0, 1.0);
 }
 
 #disk {
     margin-right: 6px;
-    color: shade(#A7C080, 1.0);
-    box-shadow: inset 0 -2px shade(#A7C080, 1.0);
+    color: shade(#81A1C1, 1.0);
+    box-shadow: inset 0 -2px shade(#81A1C1, 1.0);
 }
 
 #network {
-    color: shade(#7FBBB3, 1.0);
-    box-shadow: inset 0 -2px shade(#7FBBB3, 1.0);
+    color: shade(#8FBCBB, 1.0);
+    box-shadow: inset 0 -2px shade(#8FBCBB, 1.0);
 }
 
 #network.disconnected, #network.disabled {
-    color: shade(#E67E80, 1.0);
-    box-shadow: inset 0 -2px shade(#E67E80, 1.0);
+    color: shade(#BF616A, 1.0);
+    box-shadow: inset 0 -2px shade(#BF616A, 1.0);
 }
 
 #tray {
     margin-right: 12px;
-    color: shade(#83C092, 1.0);
-    box-shadow: inset 0 -2px shade(#83C092, 1.0);
+    color: shade(#EBCB8B, 1.0);
+    box-shadow: inset 0 -2px shade(#EBCB8B, 1.0);
 }

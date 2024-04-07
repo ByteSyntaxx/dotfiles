@@ -5,6 +5,7 @@ SCRIPTSDIR=$HOME/.config/hypr/scripts
 # Xauthority
 ${SCRIPTSDIR}/xauthority &
 ${SCRIPTSDIR}/globaltheme &
+${SCRIPTSDIR}/dportal &
 mako &
 waybar &
 hyprpaper &

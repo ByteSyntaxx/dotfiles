@@ -7,6 +7,11 @@ function fish_aliases
     alias ls="eza -lah --color=always --icons --group-directories-first"
     alias lsdir="eza -dlah */ --color=always --icons --group-directories-first"
 
+    # change mv, cp and rm 
+    alias rm="rm -i"    # prompt before every removal
+    alias mv="mv -i"    # prompt before overwrite
+    alias cp="cp -i"    # prompt before overwrite
+
     # colorize grep output
     alias grep="grep --color=auto"
 
@@ -32,7 +37,6 @@ function fish_aliases
     alias pacunlock="sudo rm /var/lib/pacman/db.lck"                                                  # remove pacman lock
     alias rpaccache="paccache -rk3 && paccache -ruk0"                                                 # clears the pacman cache
     alias rup="sudo pacman -Rns $(pacman -Qdtq)"                                                      # removes unused packages
-
 
     ## MIRROR MANAGEMENT ##
     alias fastmirror="sudo reflector --verbose --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist && sudo pacman -Syy"

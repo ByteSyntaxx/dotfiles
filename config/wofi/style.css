@@ -41,8 +41,8 @@
 }
 
 #entry:selected {
-    /*background: linear-gradient(90deg, #00AB77, #64A0CB)*/
-    background: linear-gradient(90deg, #D699B6, #A7C080)
+    /*background: linear-gradient(90deg, #D699B6, #A7C080)*/
+    background: linear-gradient(90deg, #4C566A, #D8DEE9);
 }
 
 #input {

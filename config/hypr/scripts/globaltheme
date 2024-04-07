@@ -9,8 +9,6 @@ apply_themes() {
     ${SCHEMA} colorscheme "$COLORSCHEME"
     ${SCHEMA} cursor-theme "$CURSORTHEME"
     ${SCHEMA} cursor-size 20
-    hyprctl setcursor Bibata-Modern-Ice 20
-    hyprctl reload
 }
 
 apply_themes
