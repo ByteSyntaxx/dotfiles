@@ -1,17 +1,17 @@
 {
-  "include": "~/.config/waybar/modules",
-  "layer": "top",
-  "mode": "dock",
-  "exclusive": true,
-  "passthrough": false,
-  "position": "top",
-  "spacing": 5,
-  "fixed-center": true,
-  "ipc": true,
-  "margin-left": 0,
-  "margin-right": 0,
-
-  "modules-left": ["hyprland/workspaces"],
-  "modules-center": ["network","memory", "disk"],
-  "modules-right": ["tray"]
+    "ipc": true,
+    "spacing": 5,
+    "height": 35,
+    "layer": "top",
+    "mode": "dock",
+    "margin-left": 0,
+    "margin-right": 0,
+    "exclusive": true,
+    "position": "top",
+    "passthrough": false,
+    "fixed-center": true,
+    "include": "~/.config/waybar/modules",
+    "modules-left": ["network", "disk", "memory"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["cpu", "bluetooth", "pulseaudio", "tray"]
 }

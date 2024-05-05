@@ -20,7 +20,7 @@ dynamic_lines=false
 ## Images
 allow_markup=true
 allow_images=true
-image_size=24
+image_size=20
 
 ## Search
 exec_search=false

@@ -5,7 +5,7 @@
 }
 
 #window {
-    background-color: rgba(37, 37, 37, 0.5);
+    background-color: rgba(29, 32, 33, 0.75);
 }
 
 #outer-box {
@@ -26,10 +26,12 @@
 #img {
     color: aliceblue;
     padding-right: 8px;
+    background-color: transparent;
 }
 
 #text {
     color: #d6d6d6;
+    background-color: transparent;
 }
 
 #text:selected {
@@ -37,12 +39,12 @@
 }
 
 #entry {
+    background-color: #00000000;
     padding: 6px;
 }
 
 #entry:selected {
-    /*background: linear-gradient(90deg, #D699B6, #A7C080)*/
-    background: linear-gradient(90deg, #4C566A, #D8DEE9);
+    background: linear-gradient(90deg, #689D6A, #E7D7AD);
 }
 
 #input {

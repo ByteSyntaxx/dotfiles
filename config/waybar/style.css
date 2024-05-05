@@ -1,76 +1,110 @@
 * {
-    font-size: 16px;
+    border: none;
+    min-height: 0;
+    border-radius: 3px;
+    margin: 0.1em 0.15em 0.1em 0.15em;
+}
+
+window#waybar {
+    color: #D8DEE9;
+    background: #242424;
+    
+    font-size: 14px;
     font-weight: bold;
     font-family: "JetBrainsMono";
 }
 
-window#waybar {
-    background-color: rgba(37, 37, 37, 0.5);
-    transition-duration: .5s;
-    transition-property: background-color;
-}
-
-window#waybar.hidden {
-    opacity: 0.5;
-}
-
-button {
-    border: none;
-    border-radius: 0;
-    box-shadow: inset 0 -2px transparent;
-}
-
-button:hover {
-    background: inherit;
-    box-shadow: inset 0 -2px #ffffff;
-}
-
+/* Workspaces */
 #workspaces {
-    margin: 3px 0px;
-    padding: 0px 4px;
-}
-
-#workspaces button {
-    margin-right: 2px;
-    color: aliceblue;
-}
-
-#workspaces button.active {
-    color: aliceblue;
-    box-shadow: inset 0 -2px aliceblue;
-}
-
-#tray,
-#disk,
-#memory,
-#network {
     margin: 4px 0px;
     padding: 0px 4px;
 }
 
+#workspaces button {
+    padding: 0;
+    font-size: 1em;
+    background: none;
+    font-weight: bold;
+}
+
+#workspaces button.active {
+    color: aliceblue;
+}
+
+/*  Other Modules */
+#cpu, #tray, #disk, #memory, 
+#network, #backlight, #pulseaudio {
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+}
+
+#memory, #network, #pulseaudio {
+    background: #3F3934;
+}
+
+#cpu, #tray,#disk, #backlight {
+    background: #32302F;
+}
+
+#bluetooth {
+    font-size: 1.2em;
+    padding: 0 0.6em;
+    font-weight: bold;
+    background: #3F3934;
+}
+
+/* Critical Modules */
+#cpu.critical,
+#memory.critical,
+#network.disconnected {
+    background-color: #FB4934;
+}
+
+/* Warning Modules */
+#cpu.warning,
+#memory.warning {
+    background: #FABD2F;
+}
+
+#pulseaudio.muted {
+    background: #FB4934;
+}
+
+#pulseaudio.source-muted {
+    background: #D65D0E;
+}
+
+/* Animated Modules */
 #memory {
-    color: shade(#88C0D0, 1.0);
-    box-shadow: inset 0 -2px shade(#88C0D0, 1.0);
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
-#disk {
-    margin-right: 6px;
-    color: shade(#81A1C1, 1.0);
-    box-shadow: inset 0 -2px shade(#81A1C1, 1.0);
+/* Each critical that should blink */
+#memory.critical {
+    animation-name: blink-critical;
+    animation-duration: 2s;
 }
 
-#network {
-    color: shade(#8FBCBB, 1.0);
-    box-shadow: inset 0 -2px shade(#8FBCBB, 1.0);
+@keyframes blink-warning {
+    70% {
+        color: #D8DEE9;
+    }
+
+    to {
+        color: #D8DEE9;
+        background-color: #FABD2F;
+    }
 }
 
-#network.disconnected, #network.disabled {
-    color: shade(#BF616A, 1.0);
-    box-shadow: inset 0 -2px shade(#BF616A, 1.0);
-}
+@keyframes blink-critical {
+    70% {
+      color: #D8DEE9;
+    }
 
-#tray {
-    margin-right: 12px;
-    color: shade(#EBCB8B, 1.0);
-    box-shadow: inset 0 -2px shade(#EBCB8B, 1.0);
+    to {
+        color: #D8DEE9;
+        background-color: #FB4934;
+    }
 }
