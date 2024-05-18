@@ -3,8 +3,8 @@
         "interval": 30,
         "format": "{icon}",
         "format-icons": {
-            "enabled": "",
-            "disabled": ""
+            "enabled": "󰂯",
+            "disabled": "󰂲"
         },
         "on-click": "blueberry"
     },
@@ -14,7 +14,7 @@
         "tooltip": false
     },
     "cpu": {
-        "interval": 1,      
+        "interval": 5,      
         "format": " {avg_frequency:0.1f}GHz <span color=\"darkgray\">| {usage}%</span>",
         "max-length": 13,
         "min-length": 13,
