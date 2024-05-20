@@ -21,6 +21,10 @@ function fish_aliases
     alias clearhist="history clear"
     alias cleartrash="rm -rf ~/.local/share/Trash/files && mkdir ~/.local/share/Trash/files"
     
+    # COPY AND PASTE
+    alias pbcopy='xsel --input --clipboard'
+    alias pbpaste='xsel --output --clipboard'
+
     ## PACKAGE MANAGEMENT ##
 
     # installing & removing packages
