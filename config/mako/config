@@ -2,13 +2,13 @@ max-history=10
 max-visible=3
 
 font=NotoSans NerdFont
-background-color=#1D2021
+background-color=#11111B
 text-color=#FFFFFF
 width=350
 height=150
 padding=10
 border-size=3
-border-color=#A89984
+border-color=#CBA6F7
 border-radius=10
 icons=1
 icon-path=$HOME/.config/mako/notify.png
