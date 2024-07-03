@@ -39,18 +39,18 @@ window#waybar {
 }
 
 #memory, #network, #pulseaudio {
-    background: #313244;
+    background: #161B22;
 }
 
 #cpu, #tray,#disk, #backlight {
-    background: #45475a;
+    background: #21262D;
 }
 
 #bluetooth {
     font-size: 1.2em;
     padding: 0 0.6em;
     font-weight: bold;
-    background: #313244;
+    background: #21262D;
 }
 
 /* Critical Modules */
