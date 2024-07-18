@@ -15,7 +15,7 @@
     },
     "cpu": {
         "interval": 5,      
-        "format": " {avg_frequency:0.1f}GHz <span color=\"darkgray\">| {usage}%</span>",
+        "format": " {avg_frequency:0.1f}GHz <span color=\"lightgray\">| {usage}%</span>",
         "max-length": 13,
         "min-length": 13,
         "on-click": "kitty -e htop --sort-key PERCENT_CPU",

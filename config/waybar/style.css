@@ -7,7 +7,7 @@
 
 window#waybar {
     color: #FFFFFF;
-    background: rgba(17, 17, 27, 0.5);
+    background: rgba(13, 17, 23, 0.5);
     
     font-size: 14px;
     font-weight: bold;
@@ -39,18 +39,19 @@ window#waybar {
 }
 
 #memory, #network, #pulseaudio {
-    background: #161B22;
+    background: #373F51;
 }
 
 #cpu, #tray,#disk, #backlight {
-    background: #21262D;
+    background: #5F7ADB;
 }
 
 #bluetooth {
     font-size: 1.2em;
     padding: 0 0.6em;
     font-weight: bold;
-    background: #21262D;
+    background: #373F51
+    ;
 }
 
 /* Critical Modules */
@@ -67,11 +68,11 @@ window#waybar {
 }
 
 #pulseaudio.muted {
-    background: #f38ba8;
+    background: #fa3f74;
 }
 
 #pulseaudio.source-muted {
-    background: #fab387;
+    background: #ff4c4c;
 }
 
 /* Animated Modules */

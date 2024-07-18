@@ -8,7 +8,9 @@ export PF_COL2=2
 export PF_COL3=7
 
 fish_aliases
+set_onedark
 
 clear
 pfetch
+fzf --fish | source
 zoxide init fish | source
