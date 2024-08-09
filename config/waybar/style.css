@@ -32,80 +32,17 @@ window#waybar {
 }
 
 /*  Other Modules */
-#cpu, #tray, #disk, #memory, 
+#cpu, #tray, #disk, #memory, #bluetooth,
 #network, #backlight, #pulseaudio {
     padding-left: 0.6em;
     padding-right: 0.6em;
 }
 
-#memory, #network, #pulseaudio {
-    background: #373F51;
-}
-
-#cpu, #tray,#disk, #backlight {
-    background: #5F7ADB;
-}
-
-#bluetooth {
-    font-size: 1.2em;
-    padding: 0 0.6em;
-    font-weight: bold;
-    background: #373F51
-    ;
-}
-
-/* Critical Modules */
-#cpu.critical,
-#memory.critical,
 #network.disconnected {
-    background-color: #f38ba8;
+    background: #ff4b3e;
 }
 
-/* Warning Modules */
-#cpu.warning,
-#memory.warning {
-    background: #f9e2af;
-}
-
-#pulseaudio.muted {
-    background: #fa3f74;
-}
-
+#pulseaudio.muted,
 #pulseaudio.source-muted {
-    background: #ff4c4c;
-}
-
-/* Animated Modules */
-#memory {
-    animation-direction: alternate;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
-/* Each critical that should blink */
-#memory.critical {
-    animation-name: blink-critical;
-    animation-duration: 2s;
-}
-
-@keyframes blink-warning {
-    70% {
-        color: #FFFFFF;
-    }
-
-    to {
-        color: #FFFFFF;
-        background-color: #f9e2af;
-    }
-}
-
-@keyframes blink-critical {
-    70% {
-        color: #FFFFFF;
-    }
-
-    to {
-        color: #FFFFFF;
-        background-color: #f38ba8;
-    }
+    background: #ff0000;
 }

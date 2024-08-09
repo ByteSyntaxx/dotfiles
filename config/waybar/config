@@ -10,6 +10,7 @@
     "position": "top",
     "passthrough": false,
     "fixed-center": true,
+    "reload-on-change": true,
     "include": "~/.config/waybar/modules",
     "modules-left": ["network", "disk", "memory"],
     "modules-center": ["hyprland/workspaces"],

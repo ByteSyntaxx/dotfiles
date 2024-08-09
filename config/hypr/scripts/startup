@@ -2,11 +2,11 @@
 
 SCRIPTSDIR=$HOME/.config/hypr/scripts
 
-# Xauthority
-${SCRIPTSDIR}/xauthority &
-${SCRIPTSDIR}/globaltheme &
-${SCRIPTSDIR}/dportal &
+# Apps
 mako &
 waybar &
-hyprpaper &
-wl-gammarelay &
+hyprpaper
+${SCRIPTSDIR}/dportal &
+${SCRIPTSDIR}/xauthority &
+${SCRIPTSDIR}/globaltheme &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &

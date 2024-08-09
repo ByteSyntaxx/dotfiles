@@ -1,5 +1,0 @@
-#!/bin/bash
-
-killall Hyprland
-sleep 1
-Hyprland

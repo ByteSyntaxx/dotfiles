@@ -15,5 +15,4 @@ icon-path=$HOME/.config/mako/notify.png
 icon-location=left
 text-alignment=center
 default-timeout=5000
-output=HDMI-A-1
-
+output=DP-1
