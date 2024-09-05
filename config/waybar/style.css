@@ -38,11 +38,31 @@ window#waybar {
     padding-right: 0.6em;
 }
 
+/*#network {
+    background-color: #7FBBB3;
+}
+
+#disk {
+    background-color: #83C092;
+}
+
+#memory {
+    background-color: #A7C080;
+}
+
+#cpu {
+    background-color: #DBBC7F;
+}
+
+#bluetooth {
+    background-color: #E69875;
+}*/
+
 #network.disconnected {
-    background: #ff4b3e;
+    background: #E69875;
 }
 
 #pulseaudio.muted,
 #pulseaudio.source-muted {
-    background: #ff0000;
+    background: #E67;
 }

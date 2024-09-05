@@ -33,7 +33,7 @@
     "network": {
         "interval": 5,
         "format-wifi": " {essid}",
-        "format-ethernet": "󰈀 {ifname} <span color=\"darkgray\">| {ipaddr}/{cidr}</span>",
+        "format-ethernet": "󰈀 {ifname} <span color=\"lightgray\">| {ipaddr}/{cidr}</span>",
         "format-linked": "󰈀 {ifname} (No IP)",
         "format-disconnected": "󰖪 Disconnected",
         "format-disabled": "󰖪 Disabled",
