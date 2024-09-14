@@ -10,5 +10,5 @@ time=`/bin/date '+%H:%M:&S'`
 
 # push to github
 git add .
-git commit -m "Updated Dotfiles ${date} / ${time}"
+git commit -m "Updated Dotfiles ${date} ${time}"
 git push
