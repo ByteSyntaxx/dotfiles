@@ -36,7 +36,7 @@
         "format-linked": "󰈀 {ifname} (No IP)",
         "format-disconnected": "󰖪 Disconnected",
         "format-disabled": "󰖪 Disabled",
-        "format-alt": " {bandwidthUpBits} |  {bandwidthDownBits}",
+        "format-alt": "<span color=\"lightgray\"> {bandwidthUpBits} |  {bandwidthDownBits}</span>",
         "tooltip": false
       },
     "pulseaudio": {

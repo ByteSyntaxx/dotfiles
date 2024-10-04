@@ -1,10 +1,11 @@
 return {
---    {'navarasu/onedark.nvim'},
 --    {'catppuccin/nvim'},
-    {'projekt0n/github-nvim-theme'},
---    {'EdenEast/nightfox.nvim'},
+    {'rmehri01/onenord.nvim'},
+--    {'Mofiqul/vscode.nvim'},
 --    {'navarasu/onedark.nvim'},
+--    {'EdenEast/nightfox.nvim'},
 --    {'maxmx03/solarized.nvim'},
+--    {'neanias/everforest-nvim'},
 --    {'ellisonleao/gruvbox.nvim'},
---      {'neanias/everforest-nvim'}
+--    {'projekt0n/github-nvim-theme'}
 }

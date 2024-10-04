@@ -11,7 +11,7 @@
   margin: auto;
   padding: 5px;
   border-radius: 15px;
-  border: 3px solid #C9ABFF;
+  border: 3px solid #D699B6;
 }
 
 #input {
@@ -37,7 +37,7 @@
 }
 
 #entry:selected {
-  background-color: #C9ABFF;
+  background-color: #D699B6;
 }
 
 #text {

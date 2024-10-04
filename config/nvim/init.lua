@@ -5,4 +5,4 @@ require("config.lazy")
 require("options")
 require("keymap")
 
-vim.cmd.colorscheme("github_dark_dimmed")
+vim.cmd.colorscheme("onenord")
