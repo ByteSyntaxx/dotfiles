@@ -16,7 +16,7 @@ function fish_aliases
     alias grep="grep --color=auto"
 
     # shell aliases
-    alias reload="exec zsh"
+    alias reload="exec fish"
     alias clear='printf "\x1bc"'
     alias clearhist="history clear"
     alias cleartrash="rm -rf ~/.local/share/Trash/files && mkdir ~/.local/share/Trash/files"
@@ -39,7 +39,7 @@ function fish_aliases
     alias allupdate="paru -Syyu"                                                                      # update standard & aur packages
     alias stdupdate="sudo pacman -Syyu"                                                               # update only standard packages
     alias pacunlock="sudo rm /var/lib/pacman/db.lck"                                                  # remove pacman lock
-    alias rpaccache="paccache -rk3 && paccache -ruk0"                                                 # clears the pacman cache
+    alias rmcache="paccache -rk3 && paccache -ruk0"                                                   # clears the pacman cache
     alias rup="sudo pacman -Rns $(pacman -Qdtq)"                                                      # removes unused packages
 
     ## MIRROR MANAGEMENT ##

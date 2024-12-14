@@ -28,7 +28,7 @@ window#waybar {
 }
 
 #workspaces button.active {
-    color: aliceblue;
+    color: #D699B6;
 }
 
 /*  Other Modules */
@@ -54,7 +54,7 @@ window#waybar {
     color: #DBBC7F;
 }
 
-#bluetooth {
+#clock {
     color: #E69875;
 }
 
@@ -62,6 +62,7 @@ window#waybar {
     color: aliceblue;
     background: #E69875;
 }
+
 
 #pulseaudio.muted,
 #pulseaudio.source-muted {

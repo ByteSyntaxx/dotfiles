@@ -1,0 +1,75 @@
+{
+    "bluetooth": {
+        "interval": 30,
+        "format": "{icon}",
+        "format-icons": {
+            "enabled": "󰂯",
+            "disabled": "󰂲"
+        },
+        "on-click": "blueberry"
+    },
+    "clock": {
+        "format": "\uf43a  {:%a, %b %d - %H:%M}",
+        "tooltip": false
+    },
+    "tray": {
+        "icon-size": 20,
+        "spacing": 5,
+        "tooltip": false
+    },
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "active-only": false,
+        "all-outputs": true,
+        "warp-on-scroll": false,
+        "format": "{icon}",
+        "format-icons": {
+          "1": "<span >1</span>",
+          "2": "<span >2</span>",
+          "3": "<span >3</span>",
+          "4": "<span >4</span>",
+          "5": "<span >5</span>"
+        }
+    },
+    "cpu": {
+        "interval": 5,      
+        "format": " {load:0.1f}GHz <span color=\"lightgray\">| {usage}%</span>",
+        "max-length": 16,
+        "min-length": 13,
+        "on-click": "kitty -e htop --sort-key PERCENT_CPU",
+        "tooltip": false
+    },
+    "disk": {
+        "interval": 30,
+        "format": " {free}"
+    },
+    "memory": {
+        "interval": 10,
+        "format": "  {used:0.1f}G"
+    },
+    "network": {
+        "interval": 5,
+        "format-wifi": " {essid}",
+        "format-ethernet": "󰈀 {ifname} <span color=\"lightgray\">| {ipaddr}/{cidr}</span>",
+        "format-linked": "󰈀 {ifname} (No IP)",
+        "format-disconnected": "󰖪 Disconnected",
+        "format-disabled": "󰖪 Disabled",
+        "format-alt": "<span color=\"lightgray\"> {bandwidthUpBits} |  {bandwidthDownBits}</span>",
+        "tooltip": false
+      },
+    "pulseaudio": {
+        "scroll-step": 5,
+        "format": "{icon}  {volume}% {format_source}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "",
+        "format-source-muted": "󰍭",
+        "format-icons": {
+            "default": ["", "", " "]
+        },
+        "on-click": "pavucontrol",
+        "on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+        "tooltip": false
+    }
+}

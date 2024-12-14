@@ -5,4 +5,4 @@ require("config.lazy")
 require("options")
 require("keymap")
 
-vim.cmd.colorscheme("onenord")
+vim.cmd.colorscheme("nordic")

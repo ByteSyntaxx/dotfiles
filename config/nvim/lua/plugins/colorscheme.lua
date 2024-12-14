@@ -1,6 +1,6 @@
 return {
 --    {'catppuccin/nvim'},
-    {'rmehri01/onenord.nvim'},
+    {'AlexvZyl/nordic.nvim'},
 --    {'Mofiqul/vscode.nvim'},
 --    {'navarasu/onedark.nvim'},
 --    {'EdenEast/nightfox.nvim'},
