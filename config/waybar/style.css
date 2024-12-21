@@ -51,13 +51,16 @@ window#waybar {
 }
 
 #cpu {
-    color: #DBBC7F;
+    color: #7FBBB3;
 }
 
 #clock {
-    color: #E69875;
+    color: #83C092;
 }
 
+#pulseaudio {
+    color: #A7C080;
+}
 #network.disconnected {
     color: aliceblue;
     background: #E69875;
