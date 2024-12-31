@@ -2,7 +2,7 @@
   font-family: 'JetBrainsMono';
   font-size: 14px;
   font-weight: bold;
-  color: #e5e9f0;
+  color: #E6E2CC;
   background: transparent;
 }
 
@@ -11,7 +11,7 @@
   margin: auto;
   padding: 5px;
   border-radius: 15px;
-  border: 3px solid #D699B6;
+  border: 3px solid #A7C080;
 }
 
 #input {
@@ -37,7 +37,7 @@
 }
 
 #entry:selected {
-  background-color: #D699B6;
+  background-color: #83C092;
 }
 
 #text {

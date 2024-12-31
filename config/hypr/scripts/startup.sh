@@ -3,9 +3,6 @@
 SCRIPTSDIR=$HOME/.config/hypr/scripts
 
 # Apps
-mako &
-waybar &
-hyprpaper
 ${SCRIPTSDIR}/dportal &
 ${SCRIPTSDIR}/xauthority &
 ${SCRIPTSDIR}/globaltheme &

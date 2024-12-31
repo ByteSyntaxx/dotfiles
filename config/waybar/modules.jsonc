@@ -33,7 +33,7 @@
     },
     "cpu": {
         "interval": 5,      
-        "format": " {load:0.1f}GHz <span color=\"lightgray\">| {usage}%</span>",
+        "format": " {load:0.1f}GHz <span color=\"#E6E2CC\">| {usage}%</span>",
         "max-length": 16,
         "min-length": 13,
         "on-click": "kitty -e htop --sort-key PERCENT_CPU",
@@ -41,7 +41,9 @@
     },
     "disk": {
         "interval": 30,
-        "format": " {free}"
+        "format": " {free}<span color=\"#E6E2CC\"> | {percentage_used}%</span>",
+        "tooltip": false
+
     },
     "memory": {
         "interval": 10,
@@ -50,11 +52,11 @@
     "network": {
         "interval": 5,
         "format-wifi": " {essid}",
-        "format-ethernet": "󰈀 {ifname} <span color=\"lightgray\">| {ipaddr}/{cidr}</span>",
+        "format-ethernet": "󰈀 {ifname} <span color=\"#E6E2CC\">| {ipaddr}/{cidr}</span>",
         "format-linked": "󰈀 {ifname} (No IP)",
         "format-disconnected": "󰖪 Disconnected",
         "format-disabled": "󰖪 Disabled",
-        "format-alt": "<span color=\"lightgray\"> {bandwidthUpBits} |  {bandwidthDownBits}</span>",
+        "format-alt": "<span color=\"#E6E2CC\"> {bandwidthUpBits} |  {bandwidthDownBits}</span>",
         "tooltip": false
       },
     "pulseaudio": {
