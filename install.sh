@@ -5,3 +5,9 @@ sudo pacman -S hyprland hyprpaper hyprlock kitty kitty-terminfo kitty-shell-inte
 
 # install basic programs
 sudo pacman -S waybar wofi mako cliphist obsidian discord bitwarden chromium pcmanfm intellij-idea-community-edition --needed
+
+# install paru / aur helper
+sudo pacman -S --needed base-devel
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
