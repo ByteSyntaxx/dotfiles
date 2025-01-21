@@ -26,6 +26,10 @@
   padding: 20px;
 }
 
+#prompt {
+  background: #A7C080;
+}
+
 #img {
   margin-right: 6px;
 }

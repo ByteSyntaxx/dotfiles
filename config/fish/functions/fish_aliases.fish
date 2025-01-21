@@ -3,14 +3,15 @@ function fish_aliases
 
     alias v="nvim"
 
-    # change "ls" to "exa"
+    # change "ls" to "eza"
     alias ls="eza -lah --color=always --icons --group-directories-first"
     alias lsdir="eza -dlah */ --color=always --icons --group-directories-first"
 
-    # change mv, cp and rm 
-    alias rm="rm -i"    # prompt before every removal
+    # change mv, cp and rm
     alias mv="mv -i"    # prompt before overwrite
     alias cp="cp -i"    # prompt before overwrite
+    alias rm="rm -i"    # prompt before every removal
+    alias ip='ip -c'    # enable colors in ip command
 
     # colorize grep output
     alias grep="grep --color=auto"
@@ -47,13 +48,12 @@ function fish_aliases
     alias backupmirror="sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak"
     alias restoremirror="sudo cp /etc/pacman.d/mirrorlist.bak /etc/pacman.d/mirrorlist"
 
-
     ## SYSTEM MANAMENT ##
 
     # updating the system
     alias updateparu="paru -Syu --noconfirm"                                                          # update paru package list
-    alias updatesys="sudo pacman -Syyu --noconfirm"
-    alias updatekeys="sudo pacman -Syu --noconfirm"
+    alias updatesys="sudo pacman -Syyu --noconfirm"                                                   # update whole system
+    alias updatekeys="sudo pacman -Syu --noconfirm"                                                   # update pacman package list
 
     # system tools
     alias rlfontcache="sudo fc-cache -fv"                                                             # add new fonts

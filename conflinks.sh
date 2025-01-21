@@ -12,4 +12,4 @@ ln -s ~/Documents/dotfiles/icons/ ~/.icons
 ln -s ~/Documents/dotfiles/themes/ ~/.themes
 
 # wallpaper
-ln -s ~/Documents/dotfiles/wallpaper/ ~/Pictures
+ln -s ~/Documents/dotfiles/wallpaper/ ~/Pictures/

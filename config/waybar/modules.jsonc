@@ -1,15 +1,7 @@
 {
-    "bluetooth": {
-        "interval": 30,
-        "format": "{icon}",
-        "format-icons": {
-            "enabled": "󰂯",
-            "disabled": "󰂲"
-        },
-        "on-click": "blueberry"
-    },
     "clock": {
-        "format": "\uf43a  {:%a, %b %d - %H:%M}",
+        "interval": 60,
+        "format": "  {:%a %b %d %I:%M %p}",
         "tooltip": false
     },
     "tray": {
@@ -63,8 +55,8 @@
         "scroll-step": 5,
         "format": "{icon}  {volume}% {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
+        "format-bluetooth-muted": "󰂲 {icon} {format_source}",
+        "format-muted": " {format_source}",
         "format-source": "",
         "format-source-muted": "󰍭",
         "format-icons": {

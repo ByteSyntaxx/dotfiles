@@ -14,5 +14,5 @@
     "include": "~/.config/waybar/modules.jsonc",
     "modules-left": ["network", "disk", "memory"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["cpu", "clock", "pulseaudio", "tray"]
+    "modules-right": ["cpu", "clock",  "pulseaudio", "tray"]
 }
