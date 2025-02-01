@@ -6,8 +6,8 @@
 }
 
 window#waybar {
-    color: #cdd6f4;
-    background: rgba(30, 30, 46, 0.75);
+    color: aliceblue;
+    background: rgba(0, 0, 0, 0.25);
     
     font-size: 14px;
     font-weight: bold;
@@ -28,7 +28,7 @@ window#waybar {
 }
 
 #workspaces button.active {
-    color: #cba6f7;
+    color: #D699B6;
 }
 
 /*  Other Modules */
@@ -39,34 +39,35 @@ window#waybar {
 }
 
 #network {
-    color: #89b4fa;
+    color: #7FBBB3;
 }
 
 #disk {
-    color: #74c7ec;
+    color: #83C092;
 }
 
 #memory {
-    color: #94e2d5;
+    color: #A7C080;
 }
 
 #cpu {
-    color: #89b4fa;
+    color: #7FBBB3;
 }
 
 #clock {
-    color: #74c7ec;
+    color: #83C092;
 }
 
 #pulseaudio {
-    color: #94e2d5;
+    color: #A7C080;
 }
 #network.disconnected {
-    color: #fab387;
+    color: aliceblue;
+    background: #E69875;
 }
 
 
 #pulseaudio.muted,
 #pulseaudio.source-muted {
-    color: #f38ba8;
+    color: #E67;
 }

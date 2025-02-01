@@ -1,0 +1,17 @@
+max-history=10
+max-visible=3
+
+font=NotoSans NerdFont
+background-color=#161B22
+text-color=#FFFFFF
+width=350
+height=150
+padding=10
+border-size=3
+border-color=#7CE38B
+border-radius=10
+icons=1
+icon-location=left
+text-alignment=center
+default-timeout=5000
+output=DP-1

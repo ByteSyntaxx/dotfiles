@@ -6,8 +6,8 @@
 }
 
 window#waybar {
-    color: #cdd6f4;
-    background: rgba(30, 30, 46, 0.75);
+    color: aliceblue;
+    background: rgba(30, 30, 46, 0.25);
     
     font-size: 14px;
     font-weight: bold;
@@ -43,11 +43,11 @@ window#waybar {
 }
 
 #disk {
-    color: #74c7ec;
+    color: #94e2d5;
 }
 
 #memory {
-    color: #94e2d5;
+    color: #a6e3a1;
 }
 
 #cpu {
@@ -55,14 +55,15 @@ window#waybar {
 }
 
 #clock {
-    color: #74c7ec;
+    color: #94e2d5;
 }
 
 #pulseaudio {
-    color: #94e2d5;
+    color: #a6e3a1;
 }
 #network.disconnected {
-    color: #fab387;
+    color: aliceblue;
+    background: #fab387;
 }
 
 
