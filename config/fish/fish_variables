@@ -2,7 +2,7 @@
 # VERSION: 3.0
 SETUVAR --export CURSOR:Bibata\x2dModern\x2dIce
 SETUVAR --export CURSORSIZE:20
-SETUVAR __fish_initialized:3400
+SETUVAR __fish_initialized:3800
 SETUVAR _fisher_arpitpandey992_2F_fish_2D_everforest_files:\x7e/\x2econfig/fish/themes/Everforest\x2etheme
 SETUVAR _fisher_catppuccin_2F_fish_files:\x7e/\x2econfig/fish/themes/Catppuccin\x20Frappe\x2etheme\x1e\x7e/\x2econfig/fish/themes/Catppuccin\x20Latte\x2etheme\x1e\x7e/\x2econfig/fish/themes/Catppuccin\x20Macchiato\x2etheme\x1e\x7e/\x2econfig/fish/themes/Catppuccin\x20Mocha\x2etheme
 SETUVAR _fisher_plugins:woheedev/onedark\x2dfish\x1earpitpandey992/fish\x2deverforest\x1ecatppuccin/fish
