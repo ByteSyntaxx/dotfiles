@@ -3,11 +3,9 @@
 SETUVAR --export CURSOR:Bibata\x2dModern\x2dIce
 SETUVAR --export CURSORSIZE:20
 SETUVAR __fish_initialized:3800
-SETUVAR _fisher_arpitpandey992_2F_fish_2D_everforest_files:\x7e/\x2econfig/fish/themes/Everforest\x2etheme
 SETUVAR _fisher_catppuccin_2F_fish_files:\x7e/\x2econfig/fish/themes/Catppuccin\x20Frappe\x2etheme\x1e\x7e/\x2econfig/fish/themes/Catppuccin\x20Latte\x2etheme\x1e\x7e/\x2econfig/fish/themes/Catppuccin\x20Macchiato\x2etheme\x1e\x7e/\x2econfig/fish/themes/Catppuccin\x20Mocha\x2etheme
 SETUVAR _fisher_plugins:woheedev/onedark\x2dfish\x1earpitpandey992/fish\x2deverforest\x1ecatppuccin/fish
 SETUVAR _fisher_upgraded_to_4_4:\x1d
-SETUVAR _fisher_woheedev_2F_onedark_2D_fish_files:\x7e/\x2econfig/fish/themes/One\x20Dark\x2etheme
 SETUVAR fish_color_autosuggestion:6c7086
 SETUVAR fish_color_cancel:f38ba8
 SETUVAR fish_color_command:89b4fa
@@ -49,3 +47,4 @@ SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
 SETUVAR fish_pager_color_selected_progress:\x2d\x2dbold\x1e6e6e6e
+SETUVAR fish_user_paths:/home/bytesyntaxx/\x2espicetify

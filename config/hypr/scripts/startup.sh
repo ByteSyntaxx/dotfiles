@@ -3,7 +3,8 @@
 SCRIPTSDIR=$HOME/.config/hypr/scripts
 
 # Apps
-"${SCRIPTSDIR}"/dportal &
+"${SCRIPTSDIR}"/desktop-portal &
 "${SCRIPTSDIR}"/xauthority &
-"${SCRIPTSDIR}"/globaltheme &
+waybar & hyprpaper & mako &
+systemctl start tor --now &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &

@@ -1,37 +1,24 @@
 function fish_aliases
     ## SET SOME ALIASES ##
 
-    alias v="nvim"
-
     # change "ls" to "eza"
     alias ls="eza -lah --color=always --icons --group-directories-first"
     alias lsdir="eza -dlah */ --color=always --icons --group-directories-first"
 
-    # change mv, cp and rm
-    alias mv="mv -i"    # prompt before overwrite
-    alias cp="cp -i"    # prompt before overwrite
-    alias rm="rm -i"    # prompt before every removal
-    alias ip='ip -c'    # enable colors in ip command
-
-    # colorize grep output
-    alias grep="grep --color=auto"
+    # change the behaviour of mv, cp, rm & ip
+    alias mv="mv -i"                # prompt before overwrite
+    alias cp="cp -i"                # prompt before overwrite
+    alias rm="rm -i"                # prompt before every removal
+    alias ip='ip -c'                # enable colors in ip command
+    alias grep="grep --color=auto"  # enable color in grep output
 
     # shell aliases
-    alias reload="exec fish"
     alias clear='printf "\x1bc"'
-    alias clearhist="history clear"
-    alias cleartrash="rm -rf ~/.local/share/Trash/files && mkdir ~/.local/share/Trash/files"
     
-    # COPY AND PASTE
-    alias pbcopy='xsel --input --clipboard'
-    alias pbpaste='xsel --output --clipboard'
-
     ## PACKAGE MANAGEMENT ##
 
     # installing & removing packages
     alias sps="sudo pacman -S"                                                                        # install packages
-    alias spr="sudo pacman -R"                                                                        # remove packages
-    alias sprs="sudo pacman -Rs"                                                                      # remove package recursively
     alias sprns="sudo pacman -Rns"                                                                    # remove packages with dependencies
     alias spsii="sudo pacman -Sii"                                                                    # show package info
 
@@ -58,9 +45,7 @@ function fish_aliases
     # system tools
     alias rlfontcache="sudo fc-cache -fv"                                                             # add new fonts
     alias clearcache="rm -rf $HOME/.cache/*"                                                          # clears the .cache directory
-    alias paruskip="paru -S --mflags --skipinteg"                                                     # skip integrity check
-    alias audio="pactl info | grep 'Server Name'"                                                     # audio check pulseaudio or pipewire
-    alias whichvga="/usr/local/bin/arcolinux-which-vga"                                               # current working graphicscard
+    alias cleartrash="rm -rf ~/.local/share/Trash/files && mkdir ~/.local/share/Trash/files"          # clears the .local/share/Trash directory
     alias microcode="grep . /sys/devices/system/cpu/vulnerabilities/*"                                # check vulnerabilities microcode 
     alias bupskel="cp -Rf /etc/skel ~/.skel-backup-$(date +%Y.%m.%d-%H.%M.%S)"                        # backup /etc/skel to hidden folder in home/user
 
