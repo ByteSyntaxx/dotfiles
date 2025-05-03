@@ -1,7 +1,7 @@
 {
     "clock": {
         "interval": 60,
-        "format": "  {:%a %b %d %I:%M %p}",
+        "format": "  {:%a %b %d %H:%M}",
         "tooltip": false
     },
     "tray": {
