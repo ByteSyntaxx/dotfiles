@@ -1,18 +1,34 @@
 {
-    "ipc": true,
-    "spacing": 5,
-    "height": 35,
-    "layer": "top",
-    "mode": "dock",
-    "margin-left": 0,
-    "margin-right": 0,
-    "exclusive": true,
-    "position": "top",
-    "passthrough": false,
-    "fixed-center": true,
-    "reload-on-change": true,
-    "include": "~/.config/waybar/modules.jsonc",
-    "modules-left": ["network", "disk", "memory"],
-    "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["cpu", "clock",  "pulseaudio", "tray"]
+  "ipc": true,
+  "height": 36,
+  "layer": "top",
+  "mode": "dock",
+  "margin-left": 0,
+  "margin-right": 0,
+  "exclusive": true,
+  "position": "top",
+  "passthrough": false,
+  "fixed-center": true,
+  "reload-on-change": true,
+  "include": "~/.config/waybar/modules.jsonc",
+  "modules-left": [
+    "network#icon",
+    "network#text",
+    "disk#icon",
+    "disk#text",
+    "memory#icon",
+    "memory#text"
+  ],
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+  "modules-right": [
+    "cpu#icon",
+    "cpu#text",
+    "clock#icon",
+    "clock#text",
+    "pulseaudio#icon",
+    "pulseaudio#text",
+    "tray"
+  ]
 }

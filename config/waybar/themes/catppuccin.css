@@ -1,73 +1,180 @@
 * {
-    border: none;
-    min-height: 0;
-    border-radius: 3px;
-    margin: 0.1em 0.15em 0.1em 0.15em;
-}
-
-window#waybar {
-    color: aliceblue;
-    background: rgba(30, 30, 46, 0);
-    
     font-size: 14px;
     font-weight: bold;
     font-family: "JetBrainsMono";
 }
 
-/* Workspaces */
-#workspaces {
-    margin: 4px 0px;
-    padding: 0px 4px;
+#waybar {
+    /*#background-color: #11151a;*/
+    background: transparent;
+    color: #c0caf5;
+    border-radius: 50px 50px 50px 50px;
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
-#workspaces button {
-    padding: 0;
-    font-size: 1em;
-    background: none;
-    font-weight: bold;
+button {
+    border: none;
+    border-radius: 0;
+    padding: 0 5px;
+    transition: all 0.2s ease;
+}
+
+
+/* Left Modules */
+#network.icon {
+    background-color: #89b4fa;
+    color: #181825;
+    padding: 0 12px;
+    border-radius: 10px 0 0 10px;
+    margin: 5px 0 5px 5px;
+}
+
+#network.icon.disconnected {
+    background-color: #f38ba8;
+    color: #181825;
+    padding: 0 12px;
+    border-radius: 10px 0 0 10px;
+    margin: 5px 0 5px 5px;
+}
+
+#network.text {
+    background-color: #181825;
+    color: #89b4fa;
+    padding: 0 12px;
+    border-radius: 0 10px 10px 0;
+    margin: 5px 5px 5px 0;
+}
+
+#network.text.disconnected {
+    background-color: #181825;
+    color: #f38ba8;
+    padding: 0 12px;
+    border-radius: 0 10px 10px 0;
+    margin: 5px 5px 5px 0;
+}
+
+#disk.icon {
+    background-color: #94e2d5;
+    color: #181825;
+    padding: 0 12px;
+    border-radius: 10px 0 0 10px;
+    margin: 5px 0 5px 5px;
+}
+
+#disk.text {
+    background-color: #181825;
+    color: #94e2d5;
+    padding: 0 12px;
+    border-radius: 0 10px 10px 0;
+    margin: 5px 5px 5px 0;
+}
+
+#memory.icon {
+    background-color: #a6e3a1;
+    color: #181825;
+    padding: 0 10px;
+    border-radius: 10px 0 0 10px;
+    margin: 5px 0 5px 5px;
+
+}
+
+#memory {
+    background-color: #181825;
+    color: #a6e3a1;
+    padding: 0 12px;
+    border-radius: 0 10px 10px 0;
+    margin: 5px 5px 5px 0;
+}
+
+/* Center Modules */
+#workspaces {
+    background-color: #181825;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 2px;
 }
 
 #workspaces button.active {
     color: #cba6f7;
 }
 
-/*  Other Modules */
-#cpu, #tray, #disk, #memory, #bluetooth,
-#network, #backlight, #pulseaudio {
-    padding-left: 0.6em;
-    padding-right: 0.6em;
+/* Right Modules */
+#cpu.icon {
+    background-color: #a6e3a1;
+    color: #181825;
+    padding: 0 10px;
+    border-radius: 10px 0 0 10px;
+    margin: 5px 0 5px 5px;
 }
 
-#network {
-    color: #89b4fa;
-}
-
-#disk {
-    color: #94e2d5;
-}
-
-#memory {
+#cpu.text {
+    background-color: #181825;
     color: #a6e3a1;
+    padding: 0 12px;
+    border-radius: 0 10px 10px 0;
+    margin: 5px 5px 5px 0;
 }
 
-#cpu {
-    color: #89b4fa;
+#clock.icon {
+    background-color: #94e2d5;
+    color: #181825;
+    padding: 0 12px;
+    border-radius: 10px 0 0 10px;
+    margin: 5px 0 5px 5px;
 }
 
-#clock {
+#clock.text {
+    background-color: #181825;
     color: #94e2d5;
+    padding: 0 12px;
+    border-radius: 0 10px 10px 0;
+    margin: 5px 5px 5px 0;
 }
 
-#pulseaudio {
-    color: #a6e3a1;
-}
-#network.disconnected {
-    color: aliceblue;
-    background: #fab387;
+#pulseaudio.icon {
+    background-color: #89b4fa;
+    color: #181825;
+    padding: 0 12px;
+    border-radius: 10px 0 0 10px;
+    margin: 5px 0 5px 5px;
 }
 
+#pulseaudio.text {
+    background-color: #181825;
+    color: #89b4fa;
+    padding: 0 12px;
+    border-radius: 0 10px 10px 0;
+    margin: 5px 5px 5px 0;
+}
 
-#pulseaudio.muted,
-#pulseaudio.source-muted {
+#pulseaudio.icon.muted {
+    background-color: #f38ba8;
+    color: #181825;
+    padding: 0 12px;
+    border-radius: 10px 0 0 10px;
+    margin: 5px 0 5px 5px;
+}
+
+#pulseaudio.text.muted {
+    background-color: #181825;
     color: #f38ba8;
+    padding: 0 12px;
+    border-radius: 0 10px 10px 0;
+    margin: 5px 5px 5px 0;
+}
+
+#tray {
+    background-color: #181825;
+    padding: 0 10px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+#tray>.passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray>.needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #f7768e;
 }

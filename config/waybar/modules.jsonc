@@ -1,14 +1,46 @@
 {
-    "clock": {
-        "interval": 60,
-        "format": "  {:%a %b %d %H:%M}",
+    // Left Modules
+    "network#icon": {
+        "format": "{icon}",
+        "format-icons": {
+            "wifi": "󰖩",
+            "ethernet": "󰈀",
+            "disconnected": "󰖪"
+        },
+        "tooltip": false,
+        "on-click": "kitty --title 'Network Manager' -e bash -c nmtui"
+    },
+    "network#text": {
+        "format": "{ifname} <span color=\"#E6E2CC\">| {ipaddr}/{cidr}</span>",
+        "format-disconnected": "Disconnected",
+        "format-alt": "<span color=\"#E6E2CC\"> {bandwidthUpBits} |  {bandwidthDownBits}</span>",
+        "tooltip": false,
+        "tooltip-format": "Interface: {ifname}\nIP: {ipaddr}/{cidr}"
+    },
+    "disk#icon": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "kitty --title 'Network Manager' -e bash -c nmtui"
+    },
+    "disk#text": {
+        "format": "{free}<span color=\"#E6E2CC\"> | {percentage_used}%</span>",
+        "tooltip": false,
+        "tooltip-format": "Interface: {ifname}\nIP: {ipaddr}/{cidr}"
+    },
+    "memory#icon": {
+        "interval": 3,
+        "format": "",
         "tooltip": false
     },
-    "tray": {
-        "icon-size": 20,
-        "spacing": 5,
-        "tooltip": false
+    "memory#text": {
+        "interval": 3,
+        "format": "{percentage}%",
+        "signal": 2,
+        "on-click": "pkill -SIGRTMIN+2 waybar",
+        "tooltip": false,
+        "tooltip-format": "RAM: {used:0.1f}GB / {total:0.1f}GB"
     },
+    // Center Modules
     "hyprland/workspaces": {
         "disable-scroll": true,
         "active-only": false,
@@ -16,53 +48,93 @@
         "warp-on-scroll": false,
         "format": "{icon}",
         "format-icons": {
-          "1": "<span >1</span>",
-          "2": "<span >2</span>",
-          "3": "<span >3</span>",
-          "4": "<span >4</span>",
-          "5": "<span >5</span>"
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "8",
+            "10": "10"
+        },
+        "on-click": "activate",
+        "persistent-workspaces": {
+            "eDP-1": [
+                1,
+                2,
+                3,
+                9,
+                10
+            ]
         }
     },
-    "cpu": {
-        "interval": 5,      
-        "format": " {load:0.1f}GHz <span color=\"#E6E2CC\">| {usage}%</span>",
-        "max-length": 16,
-        "min-length": 13,
-        "on-click": "kitty -e htop --sort-key PERCENT_CPU",
+    // Right Modules
+    "cpu#icon": {
+        "format": "",
         "tooltip": false
     },
-    "disk": {
-        "interval": 30,
-        "format": " {free}<span color=\"#E6E2CC\"> | {percentage_used}%</span>",
-        "tooltip": false
-
+    "cpu#text": {
+        "interval": 1,
+        "format": "{usage}%",
+        "signal": 1,
+        "on-click": "pkill -SIGRTMIN+1 waybar",
+        "tooltip": false,
+        "tooltip-format": "CPU Usage: {usage}%"
     },
-    "memory": {
-        "interval": 10,
-        "format": "  {used:0.1f}G"
-    },
-    "network": {
-        "interval": 5,
-        "format-wifi": " {essid}",
-        "format-ethernet": "󰈀 {ifname} <span color=\"#E6E2CC\">| {ipaddr}/{cidr}</span>",
-        "format-linked": "󰈀 {ifname} (No IP)",
-        "format-disconnected": "󰖪 Disconnected",
-        "format-disabled": "󰖪 Disabled",
-        "format-alt": "<span color=\"#E6E2CC\"> {bandwidthUpBits} |  {bandwidthDownBits}</span>",
+    "clock#icon": {
+        "format": "󰥔",
         "tooltip": false
-      },
-    "pulseaudio": {
-        "scroll-step": 5,
-        "format": "{icon} {volume}% {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": "󰂲 {icon} {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": "",
-        "format-source-muted": "󰍭",
+    },
+    "clock#text": {
+        "format": "{:%I:%M %p}",
+        "format-alt": "{:%a, %d %b}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode": "month",
+            "mode-mon-col": 3,
+            "weeks-pos": "right",
+            "on-scroll": 1,
+            "format": {
+                "months": "<span color='#ffead3'><b>{}</b></span>",
+                "days": "<span color='#ecc6d9'>{}</span>",
+                "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+                "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+                "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+            }
+        }
+    },
+    "pulseaudio#icon": {
+        "format": "{icon}",
+        "format-muted": "󰝟",
         "format-icons": {
-            "default": ["", "", " "]
+            "headphone": "󰋋",
+            "hands-free": "󰋎",
+            "headset": "󰋎",
+            "phone": "󰏲",
+            "portable": "󰄝",
+            "car": "󰄋",
+            "default": [
+                "󰕿",
+                "󰖀",
+                "󰕾"
+            ]
         },
-        "on-click": "pavucontrol",
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
         "tooltip": false
+    },
+    "pulseaudio#text": {
+        "format": "{volume}%",
+        "format-muted": "{volume}%",
+        "on-click": "pavucontrol",
+        "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "tooltip": true,
+        "tooltip-format": "Volume: {volume}%\nDevice: {desc}"
+    },
+    "tray": {
+        "icon-size": 18,
+        "spacing": 8,
+        "show-passive-items": true
     }
 }
