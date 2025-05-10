@@ -22,56 +22,56 @@ button {
 
 /* Left Modules */
 #network.icon {
-    background-color: #89b4fa;
-    color: #181825;
+    background-color: #458588;
+    color: #1D2021;
     padding: 0 12px;
     border-radius: 10px 0 0 10px;
     margin: 5px 0 5px 5px;
 }
 
 #network.icon.disconnected {
-    background-color: #f38ba8;
-    color: #181825;
+    background-color: #CC241D;
+    color: #1D2021;
     padding: 0 12px;
     border-radius: 10px 0 0 10px;
     margin: 5px 0 5px 5px;
 }
 
 #network.text {
-    background-color: #181825;
-    color: #89b4fa;
+    background-color: #1D2021;
+    color: #458588;
     padding: 0 12px;
     border-radius: 0 10px 10px 0;
     margin: 5px 5px 5px 0;
 }
 
 #network.text.disconnected {
-    background-color: #181825;
-    color: #f38ba8;
+    background-color: #1D2021;
+    color: #CC241D;
     padding: 0 12px;
     border-radius: 0 10px 10px 0;
     margin: 5px 5px 5px 0;
 }
 
 #disk.icon {
-    background-color: #94e2d5;
-    color: #181825;
+    background-color: #689D6A;
+    color: #1D2021;
     padding: 0 12px;
     border-radius: 10px 0 0 10px;
     margin: 5px 0 5px 5px;
 }
 
 #disk.text {
-    background-color: #181825;
-    color: #94e2d5;
+    background-color: #1D2021;
+    color: #689D6A;
     padding: 0 12px;
     border-radius: 0 10px 10px 0;
     margin: 5px 5px 5px 0;
 }
 
 #memory.icon {
-    background-color: #a6e3a1;
-    color: #181825;
+    background-color: #98971A;
+    color: #1D2021;
     padding: 0 10px;
     border-radius: 10px 0 0 10px;
     margin: 5px 0 5px 5px;
@@ -79,8 +79,8 @@ button {
 }
 
 #memory {
-    background-color: #181825;
-    color: #a6e3a1;
+    background-color: #1D2021;
+    color: #98971A;
     padding: 0 12px;
     border-radius: 0 10px 10px 0;
     margin: 5px 5px 5px 0;
@@ -88,83 +88,83 @@ button {
 
 /* Center Modules */
 #workspaces {
-    background-color: #181825;
+    background-color: #1D2021;
     border-radius: 10px;
     margin: 5px;
     padding: 2px;
 }
 
 #workspaces button.active {
-    color: #cba6f7;
+    color: #B16286;
 }
 
 /* Right Modules */
 #cpu.icon {
-    background-color: #a6e3a1;
-    color: #181825;
+    background-color: #98971A;
+    color: #1D2021;
     padding: 0 10px;
     border-radius: 10px 0 0 10px;
     margin: 5px 0 5px 5px;
 }
 
 #cpu.text {
-    background-color: #181825;
-    color: #a6e3a1;
+    background-color: #1D2021;
+    color: #98971A;
     padding: 0 12px;
     border-radius: 0 10px 10px 0;
     margin: 5px 5px 5px 0;
 }
 
 #clock.icon {
-    background-color: #94e2d5;
-    color: #181825;
+    background-color: #689D6A;
+    color: #1D2021;
     padding: 0 12px;
     border-radius: 10px 0 0 10px;
     margin: 5px 0 5px 5px;
 }
 
 #clock.text {
-    background-color: #181825;
-    color: #94e2d5;
+    background-color: #1D2021;
+    color: #689D6A;
     padding: 0 12px;
     border-radius: 0 10px 10px 0;
     margin: 5px 5px 5px 0;
 }
 
 #pulseaudio.icon {
-    background-color: #89b4fa;
-    color: #181825;
+    background-color: #458588;
+    color: #1D2021;
     padding: 0 12px;
     border-radius: 10px 0 0 10px;
     margin: 5px 0 5px 5px;
 }
 
 #pulseaudio.text {
-    background-color: #181825;
-    color: #89b4fa;
+    background-color: #1D2021;
+    color: #458588;
     padding: 0 12px;
     border-radius: 0 10px 10px 0;
     margin: 5px 5px 5px 0;
 }
 
 #pulseaudio.icon.muted {
-    background-color: #f38ba8;
-    color: #181825;
+    background-color: #CC241D;
+    color: #1D2021;
     padding: 0 12px;
     border-radius: 10px 0 0 10px;
     margin: 5px 0 5px 5px;
 }
 
 #pulseaudio.text.muted {
-    background-color: #181825;
-    color: #f38ba8;
+    background-color: #1D2021;
+    color: #CC241D;
     padding: 0 12px;
     border-radius: 0 10px 10px 0;
     margin: 5px 5px 5px 0;
 }
 
 #tray {
-    background-color: #181825;
+    background-color: #1D2021;
     padding: 0 10px;
     border-radius: 10px;
     margin: 5px;
@@ -176,5 +176,5 @@ button {
 
 #tray>.needs-attention {
     -gtk-icon-effect: highlight;
-    background-color: #f38ba8;
+    background-color: #CC241D;
 }

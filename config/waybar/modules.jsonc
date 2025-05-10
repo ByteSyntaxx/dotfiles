@@ -25,7 +25,7 @@
     "disk#text": {
         "format": "{free}<span color=\"#E6E2CC\"> | {percentage_used}%</span>",
         "tooltip": false,
-        "tooltip-format": "Interface: {ifname}\nIP: {ipaddr}/{cidr}"
+        "tooltip-format": ""
     },
     "memory#icon": {
         "interval": 3,
