@@ -12,4 +12,4 @@ git clone https://aur.archlinux.org/paru.git
 cd paru || exit
 makepkg -si
 
-paru -S --noconfirm --needed brave-bin visual-studio-code-bin
+paru -S --noconfirm --needed brave-bin visual-studio-code-bin sysmontask

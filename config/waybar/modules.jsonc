@@ -76,12 +76,11 @@
         "tooltip": false
     },
     "cpu#text": {
-        "interval": 1,
+        "interval": 2,
         "format": "{usage}%",
         "signal": 1,
         "on-click": "pkill -SIGRTMIN+1 waybar",
-        "tooltip": false,
-        "tooltip-format": "CPU Usage: {usage}%"
+        "tooltip": false
     },
     "clock#icon": {
         "format": "󰥔",
@@ -97,10 +96,10 @@
             "weeks-pos": "right",
             "on-scroll": 1,
             "format": {
-                "months": "<span color='#ffead3'><b>{}</b></span>",
-                "days": "<span color='#ecc6d9'>{}</span>",
-                "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
-                "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+                "months": "<span color='#a6e3a1'><b>{}</b></span>",
+                "days": "<span color='#cba6f7'>{}</span>",
+                "weeks": "<span color='#74c7ec'><b>W{}</b></span>",
+                "weekdays": "<span color='#f9e2af'><b>{}</b></span>",
                 "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
             }
         }
@@ -129,7 +128,7 @@
         "format-muted": "{volume}%",
         "on-click": "pavucontrol",
         "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-        "tooltip": true,
+        "tooltip": false,
         "tooltip-format": "Volume: {volume}%\nDevice: {desc}"
     },
     "tray": {
