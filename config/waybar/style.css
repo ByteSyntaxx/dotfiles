@@ -1,1 +1,179 @@
-/home/bytesyntaxx/.config/waybar/themes/catppuccin.css
+* {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "JetBrainsMono";
+}
+
+#waybar {
+    /*#background-color: #11151a;*/
+    background: transparent;
+    color: #c0caf5;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+button {
+    border: none;
+    border-radius: 0;
+    padding: 0 5px;
+    transition: all 0.2s ease;
+}
+
+
+/* Left Modules */
+#network.icon {
+    background-color: #7FBBB3;
+    color: #1E2326;
+    padding: 0 12px;
+    border-radius: 10px 0 0 10px;
+    margin: 5px 0 5px 5px;
+}
+
+#network.icon.disconnected {
+    background-color: #E67E80;
+    color: #1E2326;
+    padding: 0 12px;
+    border-radius: 10px 0 0 10px;
+    margin: 5px 0 5px 5px;
+}
+
+#network.text {
+    background-color: #1E2326;
+    color: #7FBBB3;
+    padding: 0 12px;
+    border-radius: 0 10px 10px 0;
+    margin: 5px 5px 5px 0;
+}
+
+#network.text.disconnected {
+    background-color: #1E2326;
+    color: #E67E80;
+    padding: 0 12px;
+    border-radius: 0 10px 10px 0;
+    margin: 5px 5px 5px 0;
+}
+
+#disk.icon {
+    background-color: #83C092;
+    color: #1E2326;
+    padding: 0 12px;
+    border-radius: 10px 0 0 10px;
+    margin: 5px 0 5px 5px;
+}
+
+#disk.text {
+    background-color: #1E2326;
+    color: #83C092;
+    padding: 0 12px;
+    border-radius: 0 10px 10px 0;
+    margin: 5px 5px 5px 0;
+}
+
+#memory.icon {
+    background-color: #A7C080;
+    color: #1E2326;
+    padding: 0 10px;
+    border-radius: 10px 0 0 10px;
+    margin: 5px 0 5px 5px;
+
+}
+
+#memory {
+    background-color: #1E2326;
+    color: #A7C080;
+    padding: 0 12px;
+    border-radius: 0 10px 10px 0;
+    margin: 5px 5px 5px 0;
+}
+
+/* Center Modules */
+#workspaces {
+    background-color: #1E2326;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 2px;
+}
+
+#workspaces button.active {
+    color: #D699B6;
+}
+
+/* Right Modules */
+#cpu.icon {
+    background-color: #A7C080;
+    color: #1E2326;
+    padding: 0 10px;
+    border-radius: 10px 0 0 10px;
+    margin: 5px 0 5px 5px;
+}
+
+#cpu.text {
+    background-color: #1E2326;
+    color: #A7C080;
+    padding: 0 12px;
+    border-radius: 0 10px 10px 0;
+    margin: 5px 5px 5px 0;
+}
+
+#clock.icon {
+    background-color: #83C092;
+    color: #1E2326;
+    padding: 0 12px;
+    border-radius: 10px 0 0 10px;
+    margin: 5px 0 5px 5px;
+}
+
+#clock.text {
+    background-color: #1E2326;
+    color: #83C092;
+    padding: 0 12px;
+    border-radius: 0 10px 10px 0;
+    margin: 5px 5px 5px 0;
+}
+
+#pulseaudio.icon {
+    background-color: #7FBBB3;
+    color: #1E2326;
+    padding: 0 12px;
+    border-radius: 10px 0 0 10px;
+    margin: 5px 0 5px 5px;
+}
+
+#pulseaudio.text {
+    background-color: #1E2326;
+    color: #7FBBB3;
+    padding: 0 12px;
+    border-radius: 0 10px 10px 0;
+    margin: 5px 5px 5px 0;
+}
+
+#pulseaudio.icon.muted {
+    background-color: #E67E80;
+    color: #1E2326;
+    padding: 0 12px;
+    border-radius: 10px 0 0 10px;
+    margin: 5px 0 5px 5px;
+}
+
+#pulseaudio.text.muted {
+    background-color: #1E2326;
+    color: #E67E80;
+    padding: 0 12px;
+    border-radius: 0 10px 10px 0;
+    margin: 5px 5px 5px 0;
+}
+
+#tray {
+    background-color: #1E2326;
+    padding: 0 10px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+#tray>.passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray>.needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #E67E80;
+}
