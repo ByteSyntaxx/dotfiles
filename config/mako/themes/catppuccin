@@ -1,23 +1,17 @@
 max-history=10
-max-visible=5
+max-visible=3
 
-font=JetBrains Nerd Font
+font=NotoSans NerdFont
+background-color=#1E2326
+text-color=#FFFFFF
 width=350
 height=150
 padding=10
 border-size=3
+border-color=#83C092
 border-radius=10
 icons=1
 icon-location=left
 text-alignment=center
 default-timeout=5000
 output=DP-1
-
-# Colors
-background-color=#1e1e2e
-text-color=#cdd6f4
-border-color=#89b4fa
-progress-color=over #313244
-
-[urgency=high]
-border-color=#fab387
