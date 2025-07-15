@@ -1,0 +1,1 @@
+notify-send "It's Updatetime" "There are $(checkupdates|count) updates available." --icon ~/.config/mako/notify.png
