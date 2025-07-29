@@ -15,3 +15,6 @@ icon-location=left
 text-alignment=center
 default-timeout=5000
 output=DP-1
+
+[urgency=critical]
+border-color=#E67E80

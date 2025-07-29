@@ -2,16 +2,20 @@ max-history=10
 max-visible=3
 
 font=NotoSans NerdFont
-background-color=#1E2326
+background-color=#181825
 text-color=#FFFFFF
 width=350
 height=150
 padding=10
 border-size=3
-border-color=#83C092
+border-color=#89b4fa
 border-radius=10
 icons=1
 icon-location=left
 text-alignment=center
 default-timeout=5000
 output=DP-1
+
+[urgency=critical]
+border-color=#f38ba8
+
