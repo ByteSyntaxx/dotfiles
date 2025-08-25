@@ -3,13 +3,13 @@
 # link all configs via symlink
 
 # program configs
-ln -s ~/Documents/dotfiles/config/* ~/.config/
+ln -fs ~/Documents/dotfiles/config/* ~/.config/
 
 # icons & cursros
-ln -s ~/Documents/dotfiles/icons/ ~/.icons
+ln -fs ~/Documents/dotfiles/icons/ ~/.icons
 
 # themes
-ln -s ~/Documents/dotfiles/themes/ ~/.themes
+ln -fs ~/Documents/dotfiles/themes/ ~/.themes
 
 # wallpaper
-ln -s ~/Documents/dotfiles/wallpaper/ ~/Pictures/
+ln -fs ~/Documents/dotfiles/wallpaper/ ~/Pictures/
