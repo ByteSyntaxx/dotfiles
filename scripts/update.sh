@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-# Make sure that local dotfiles are up to date 
+# Make sure that local dotfiles are up to date
 git pull
 
 # Date and Time timestamps

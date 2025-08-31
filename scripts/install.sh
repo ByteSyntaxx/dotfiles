@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # install window manager & terminal
 sudo pacman -S --noconfirm --needed hyprland hyprpaper hyprlock xdg-desktop-portal-hyprland kitty qt5-wayland qt6-wayland polkit-gnome
