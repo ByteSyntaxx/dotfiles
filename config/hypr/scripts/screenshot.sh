@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 timestamp=$(date +%Y%m%d-%H%M%S)
 shots_dir="$HOME/Pictures/screenshots"

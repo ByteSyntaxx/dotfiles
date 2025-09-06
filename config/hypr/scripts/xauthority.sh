@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 # generate an ~/.Xauthority file if there is none
 # sublime text needs it to save as sudo and other apps

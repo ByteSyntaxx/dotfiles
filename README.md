@@ -13,6 +13,7 @@
 - ttf-jetbrains-mono
 - ttf-roboto
 - noto-fonts
+- apple-fonts
 - noto-fonts-extra
 - noto-fonts-emoji
 
