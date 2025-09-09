@@ -13,3 +13,6 @@ ln -fs ~/Documents/dotfiles/themes/ ~/.themes
 
 # wallpaper
 ln -fs ~/Documents/dotfiles/wallpaper/ ~/Pictures/
+
+# pacman.conf
+ln -fs ~/Documents/dotfiles/config/pacman.conf /etc/pacman.conf
