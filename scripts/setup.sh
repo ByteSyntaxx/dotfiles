@@ -12,6 +12,7 @@ ln -fs ~/Documents/dotfiles/icons/ ~/.icons
 ln -fs ~/Documents/dotfiles/themes/ ~/.themes
 
 # wallpaper
+mkdir ~/Pictures
 ln -fs ~/Documents/dotfiles/wallpaper/ ~/Pictures/
 
 # pacman.conf

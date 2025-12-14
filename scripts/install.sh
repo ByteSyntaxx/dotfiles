@@ -4,7 +4,7 @@
 sudo pacman -S --noconfirm --needed hyprland hyprpaper hyprlock xdg-desktop-portal-hyprland kitty qt5-wayland qt6-wayland polkit-gnome
 
 # install basic programs
-sudo pacman -S --noconfirm --needed fish waybar fuzzel mako cliphist obsidian discord bitwarden pcmanfm intellij-idea-community-edition zed
+sudo pacman -S --noconfirm --needed fish waybar fuzzel mako cliphist obsidian discord bitwarden pcmanfm intellij-idea-community-edition 
 
 # install fonts
 sudo pacman -S --noconfirm --needed ttf-firacode-nerd ttf-jetbrains-mono ttf-roboto noto-fonts noto-fonts-extra noto-fonts-emoji
