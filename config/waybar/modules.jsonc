@@ -8,7 +8,7 @@
             "disconnected": "󰖪"
         },
         "tooltip": false,
-        "on-click": "kitty --title 'Network Manager' -e bash -c nmtui"
+        "on-click": ""
     },
     "network#text": {
         "format": "{ifname} <span color=\"#E6E2CC\">| {ipaddr}/{cidr}</span>",
@@ -20,7 +20,7 @@
     "disk#icon": {
         "format": "",
         "tooltip": false,
-        "on-click": "kitty --title 'Network Manager' -e bash -c nmtui"
+        "on-click": ""
     },
     "disk#text": {
         "format": "{free}<span color=\"#E6E2CC\"> | {percentage_used}%</span>",
