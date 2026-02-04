@@ -15,17 +15,17 @@ function fish_aliases
     ## PACKAGE MANAGEMENT ##
 
     # general package management
-    alias install="yay -S"                                                                           # install an package
-    alias remove="yay -Rns"                                                                          # remove an package with dependencies
-    alias search="yay -Ss"                                                                           # search packages
-    alias pkginfo="yay -Sii"                                                                         # show package info
+    alias install="paru -S"                                                                           # install an package
+    alias remove="paru -Rns"                                                                          # remove an package with dependencies
+    alias search="paru -Ss"                                                                           # search packages
+    alias pkginfo="paru -Sii"                                                                         # show package info
     alias clrpkgcache="paccache -rk3 && paccache -ruk0"                                               # clears the pacman cache
     alias clrpkgs="sudo pacman -Rns $(pacman -Qdtq)"                                                  # removes unused packages
     alias unlock="sudo rm /var/lib/pacman/db.lck"                                                     # remove pacman lock 
 
     ## SYSTEM MANAGEMENT ##
-    alias updateall="yay -Syyu; yay -Scc"                                                           # update system & clear cache
-    alias updatepkglist="yay -Syu"                                                                   # update package lists
+    alias updateall="paru -Syyu; paru -Scc"                                                           # update system & clear cache
+    alias updatepkglist="paru -Syu"                                                                   # update package lists
     alias rlfontcache="sudo fc-cache -fv"                                                             # reload the system font cache
     alias cleartrash="rm -rf ~/.local/share/Trash/files && mkdir ~/.local/share/Trash/files"          # clears the .local/share/Trash directory
     alias microcode="grep . /sys/devices/system/cpu/vulnerabilities/*"                                # check vulnerabilities microcode 
