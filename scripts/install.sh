@@ -10,7 +10,7 @@ sudo pacman -S --noconfirm --needed fish waybar fuzzel mako cliphist obsidian di
 sudo pacman -S --noconfirm --needed ttf-firacode-nerd ttf-jetbrains-mono ttf-roboto noto-fonts noto-fonts-extra noto-fonts-emoji
 
 # change shell for the 'bytesyntaxx' user
-sudo chsh bytesyntaxx -s /bin/fish
+sudo chsh $(whoami) -s /bin/fish
 
 # setup chaotic aur
 sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com                # recieve the primary keyids
