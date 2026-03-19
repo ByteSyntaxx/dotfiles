@@ -7,6 +7,7 @@ case "$chosen" in
         ln -sf $HOME/Documents/dotfiles/config/fuzzel/themes/catppuccin.ini $HOME/Documents/dotfiles/config/fuzzel/config.ini; 
         ln -sf $HOME/Documents/dotfiles/config/hypr/themes/catppuccin.conf $HOME/Documents/dotfiles/config/hypr/hyprland.conf;
         ln -sf $HOME/Documents/dotfiles/config/hypr/themes/catppuccin-hyprlock.conf $HOME/Documents/dotfiles/config/hypr/hyprlock.conf;
+        ln -sf $HOME/Documents/dotfiles/config/hypr/themes/catppuccin-hyprpaper.conf $HOME/Documents/dotfiles/config/hypr/hyprpaper.conf;
         ln -sf $HOME/Documents/dotfiles/config/mako/themes/catppuccin $HOME/Documents/dotfiles/config/mako/config;
         ln -sf $HOME/Documents/dotfiles/config/waybar/themes/catppuccin.css $HOME/Documents/dotfiles/config/waybar/style.css;
         hyprctl reload;
@@ -16,6 +17,7 @@ case "$chosen" in
         ln -sf $HOME/Documents/dotfiles/config/fuzzel/themes/everforest.ini $HOME/Documents/dotfiles/config/fuzzel/config.ini; 
         ln -sf $HOME/Documents/dotfiles/config/hypr/themes/everforest.conf $HOME/Documents/dotfiles/config/hypr/hyprland.conf;
         ln -sf $HOME/Documents/dotfiles/config/hypr/themes/everforest-hyprlock.conf $HOME/Documents/dotfiles/config/hypr/hyprlock.conf;
+        ln -sf $HOME/Documents/dotfiles/config/hypr/themes/everforest-hyprpaper.conf $HOME/Documents/dotfiles/config/hypr/hyprpaper.conf;
         ln -sf $HOME/Documents/dotfiles/config/mako/themes/everforest $HOME/Documents/dotfiles/config/mako/config;
         ln -sf $HOME/Documents/dotfiles/config/waybar/themes/everforest.css $HOME/Documents/dotfiles/config/waybar/style.css;
         hyprctl reload;
