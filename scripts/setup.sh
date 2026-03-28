@@ -18,5 +18,5 @@ ln -fs ~/Documents/dotfiles/wallpaper/ ~/Pictures/
 # pacman.conf
 ln -fs ~/Documents/dotfiles/config/pacman.conf /etc/pacman.conf
 
-# pacman.conf
+# vscode settings
 ln -fs ~/Documents/dotfiles/config/vscode-settings.json ~/.config/Code/User/settings.json
