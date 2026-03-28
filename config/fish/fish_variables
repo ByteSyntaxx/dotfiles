@@ -3,7 +3,34 @@
 SETUVAR --export CURSOR:Bibata\x2dModern\x2dIce
 SETUVAR --export CURSORSIZE:20
 SETUVAR __fish_initialized:4300
-SETUVAR _fisher_catppuccin_2F_fish_files:\x7e/\x2econfig/fish/themes/Catppuccin\x20Frappe\x2etheme\x1e\x7e/\x2econfig/fish/themes/Catppuccin\x20Latte\x2etheme\x1e\x7e/\x2econfig/fish/themes/Catppuccin\x20Macchiato\x2etheme\x1e\x7e/\x2econfig/fish/themes/Catppuccin\x20Mocha\x2etheme
-SETUVAR _fisher_plugins:woheedev/onedark\x2dfish\x1earpitpandey992/fish\x2deverforest\x1ecatppuccin/fish
 SETUVAR _fisher_upgraded_to_4_4:\x1d
+SETUVAR fish_color_autosuggestion:9f9f9f
+SETUVAR fish_color_cancel:000000\x1e\x2d\x2dbackground\x3dffffff
+SETUVAR fish_color_command:5c5cff
+SETUVAR fish_color_comment:cd5c5c
+SETUVAR fish_color_cwd:00ff00
+SETUVAR fish_color_cwd_root:00cd00
+SETUVAR fish_color_end:00ff00
+SETUVAR fish_color_error:ff0000
+SETUVAR fish_color_escape:00ffff
+SETUVAR fish_color_history_current:\x2d\x2dbold
+SETUVAR fish_color_host:ffffff
+SETUVAR fish_color_host_remote:cdcd00
+SETUVAR fish_color_normal:ffffff
+SETUVAR fish_color_operator:00ffff
+SETUVAR fish_color_param:00cdcd
+SETUVAR fish_color_quote:cdcd00
+SETUVAR fish_color_redirection:00cdcd\x1e\x2d\x2dbold
+SETUVAR fish_color_search_match:ffffff\x1e\x2d\x2dbold\x1e\x2d\x2dbackground\x3d7f7f7f
+SETUVAR fish_color_selection:ffffff\x1e\x2d\x2dbold\x1e\x2d\x2dbackground\x3d7f7f7f
+SETUVAR fish_color_status:00cd00
+SETUVAR fish_color_user:00ff00
+SETUVAR fish_color_valid_path:\x2d\x2dunderline
+SETUVAR fish_pager_color_description:cdcd00\x1e\x2d\x2ditalics
+SETUVAR fish_pager_color_prefix:ffffff\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
+SETUVAR fish_pager_color_progress:ffffff\x1e\x2d\x2dbackground\x3d00cdcd\x1e\x2d\x2dbold
+SETUVAR fish_pager_color_selected_background:\x2d\x2dbackground\x3d7f7f7f
+SETUVAR fish_pager_color_selected_completion:ffffff\x1e\x2d\x2dbold
+SETUVAR fish_pager_color_selected_description:ffffff\x1e\x2d\x2dbold\x1e\x2d\x2ditalics
+SETUVAR fish_pager_color_selected_prefix:ffffff\x1e\x2d\x2dbold
 SETUVAR fish_user_paths:/home/bytesyntaxx/\x2espicetify
