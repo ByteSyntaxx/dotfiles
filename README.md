@@ -5,9 +5,9 @@
 - hyprpaper
 - hyprlock
 - waybar
-- fuzzel
-- kitty
-- fish (shell)
+- fuzzel    (App launcher)
+- kitty     (terminal)
+- fish      (shell)
 #### Installed Fonts:
 - ttf-firacode-nerd
 - ttf-jetbrains-mono
