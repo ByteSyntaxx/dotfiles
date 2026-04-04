@@ -6,4 +6,3 @@ SCRIPTSDIR=$HOME/.config/hypr/scripts
 "${SCRIPTSDIR}"/desktop-portal &
 "${SCRIPTSDIR}"/xauthority &
 systemctl start tor --now &
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
