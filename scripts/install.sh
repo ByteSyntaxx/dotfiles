@@ -4,10 +4,13 @@
 sudo pacman -S --noconfirm --needed hyprland hyprpaper hyprlock xdg-desktop-portal-hyprland kitty qt5-wayland qt6-wayland polkit-gnome
 
 # install basic programs
-sudo pacman -S --noconfirm --needed fish waybar fuzzel mako cliphist obsidian discord bitwarden thunar intellij-idea-community-edition 
+sudo pacman -S --noconfirm --needed fish waybar fuzzel mako cliphist obsidian discord bitwarden pcmanfm intellij-idea-community-edition 
 
 # install fonts
 sudo pacman -S --noconfirm --needed ttf-firacode-nerd ttf-jetbrains-mono ttf-roboto noto-fonts noto-fonts-extra noto-fonts-emoji
+
+# install audio driver
+sudo pacman -S pipewire pipewire-alsa pipewire-audio pipewire-pulse
 
 # change shell for the 'bytesyntaxx' user
 sudo chsh $(whoami) -s /bin/fish
@@ -20,11 +23,12 @@ sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.ta
 sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'   # This allows us to install our chaotic-mirrorlist
 
 sudo pacman -Syu
-# install paru / aur helper
-#sudo pacman -S --needed base-devel
 
-#git clone https://aur.archlinux.org/paru.git
-#cd paru || exit
-#makepkg -si
+# install aur helper
+sudo pacman -S --needed base-devel
 
-#paru -S --noconfirm --needed brave-bin sysmontask nwg-look
+git clone https://aur.archlinux.org/paru.git
+cd paru || exit
+makepkg -si
+
+paru -S --noconfirm --needed brave-bin nwg-look

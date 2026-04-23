@@ -126,7 +126,7 @@
     "pulseaudio#text": {
         "format": "{volume}%",
         "format-muted": "{volume}%",
-        "on-click": "pavucontrol",
+        "on-click": "pwvucontrol",
         "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
         "tooltip": false,
         "tooltip-format": "Volume: {volume}%\nDevice: {desc}"
