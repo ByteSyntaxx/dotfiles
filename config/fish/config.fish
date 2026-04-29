@@ -1,7 +1,7 @@
 ## CHANGE SOME FISH SETTINGS ##
 set fish_greeting ""
 
-export EDITOR=vim
+set PATH "$HOME/.local/bin:$PATH"
 
 fish_add_path /home/bytesyntaxx/.spicetify
 
