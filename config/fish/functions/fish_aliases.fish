@@ -5,6 +5,8 @@ function fish_aliases
     alias clear='printf "\x1bc"'
     alias ls="eza -lah --color=always --icons --group-directories-first"
     alias lsdir="eza -dlah */ --color=always --icons --group-directories-first"
+    alias sudo="doas"
+    alias sudovim="doas vim"
 
     # change the behaviour of mv, cp, rm & ip
     alias mv="mv -i"                                                                                  # prompt before overwrite
