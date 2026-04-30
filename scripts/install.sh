@@ -35,6 +35,7 @@ while true; do
             chown -c root:root /etc/doas.conf
             chmod -c 0400 /etc/doas.conf
             (echo '#!/bin/bash'; echo 'exec doas "${@/--preserve-env*/}"') > $HOME/.local/bin/sudo
+            chmod +x $HOME/.local/bin/sudo
             break;;
         [Nn]* ) break;;
         * ) echo "Please answer yes or no.";;
