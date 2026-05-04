@@ -12,7 +12,7 @@ function fish_aliases
     alias mv="mv -i"                                                                                  # prompt before overwrite
     alias cp="cp -i"                                                                                  # prompt before overwrite
     alias rm="rm -i"                                                                                  # prompt before every removal
-    alias ip='ip -c'                                                                                  # enable colors in ip command
+    alias ip="ip -c"                                                                                  # enable colors in ip command
     alias grep="grep --color=auto"                                                                    # enable color in grep output
     ## PACKAGE MANAGEMENT ##
 
@@ -41,6 +41,6 @@ function fish_aliases
     ## MIRROR MANAGEMENT ##
     alias backupmirror="sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak"                # backup current mirrorlist
     alias restoremirror="sudo cp /etc/pacman.d/mirrorlist.bak /etc/pacman.d/mirrorlist"               # restore backed up mirrorlist
-    alias fastmirror="sudo reflector --verbose --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist && sudo pacman -Syy"
+    alias fastmirror="sudo reflector --verbose --country France,Germany,Poland,Denmark,Belgium --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist && sudo pacman -Syy"
 
 end
