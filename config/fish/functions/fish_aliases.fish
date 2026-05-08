@@ -32,6 +32,7 @@ function fish_aliases
     alias cleartrash="rm -rf ~/.local/share/Trash/files && mkdir ~/.local/share/Trash/files"          # clears the .local/share/Trash directory
     alias microcode="grep . /sys/devices/system/cpu/vulnerabilities/*"                                # check vulnerabilities microcode 
     alias bckupskel="cp -Rf /etc/skel ~/.skel-backup-$(date +%Y.%m.%d-%H.%M.%S)"                      # backup /etc/skel to hidden folder in home/user
+    alias brokensymlinks='sudo find / -type d \( -path "/dev" -o -path "/proc" -o -path "/run" -o -path "/sys" \) -prune -o -xtype l -print'
 
     ## GRUB MANAGEMENT ##
     alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"                                     # grup update
