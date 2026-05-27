@@ -1,9 +1,9 @@
-require("configs.animations")
-require("configs.keybinds")
-require("configs.keyboard")
-require("configs.misc")
-require("configs.monitors")
-require("configs.startup")
+require("modules.animations")
+require("modules.keybinds")
+require("modules.keyboard")
+require("modules.misc")
+require("modules.monitors")
+require("modules.startup")
 
 -- decoration settings
 hl.config({
