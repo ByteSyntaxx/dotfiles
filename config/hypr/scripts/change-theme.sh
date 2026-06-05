@@ -15,7 +15,8 @@ case "$chosen" in
         makoctl reload;
         killall waybar; waybar &
         gsettings set org.gnome.desktop.interface gtk-theme Catppuccin-Dark;
-        gsettings set org.gnome.desktop.wm.preferences theme Catppuccin-Dark;;
+        gsettings set org.gnome.desktop.wm.preferences theme Catppuccin-Dark;
+        notify-send "Theme Change" "Applied: Catppuccin Mocha" --icon ~/.config/mako/success.png;;
     "Everforest Dark") 
         cp $HOME/Documents/dotfiles/config/fuzzel/themes/everforest.ini $HOME/Documents/dotfiles/config/fuzzel/config.ini; 
         cp $HOME/Documents/dotfiles/config/hypr/themes/everforest.lua $HOME/Documents/dotfiles/config/hypr/hyprland.lua;
@@ -28,7 +29,8 @@ case "$chosen" in
         makoctl reload;
         killall waybar; waybar &        
         gsettings set org.gnome.desktop.interface gtk-theme Everforest-Dark-Medium;
-        gsettings set org.gnome.desktop.wm.preferences theme Everforest-Dark-Medium;;
+        gsettings set org.gnome.desktop.wm.preferences theme Everforest-Dark-Medium
+        notify-send "Theme Change" "Applied: Everforest Dark" --icon ~/.config/mako/success.png;;
     "Gruvbox Dark") 
         cp $HOME/Documents/dotfiles/config/fuzzel/themes/gruvbox-dark.ini $HOME/Documents/dotfiles/config/fuzzel/config.ini; 
         cp $HOME/Documents/dotfiles/config/hypr/themes/gruvbox-dark.lua $HOME/Documents/dotfiles/config/hypr/hyprland.lua;
@@ -41,7 +43,8 @@ case "$chosen" in
         makoctl reload;
         killall waybar; waybar &
         gsettings set org.gnome.desktop.interface gtk-theme Gruvbox-B-LB-Dark;
-        gsettings set org.gnome.desktop.wm.preferences theme Gruvbox-B-LB-Dark;;
+        gsettings set org.gnome.desktop.wm.preferences theme Gruvbox-B-LB-Dark
+        notify-send "Theme Change" "Applied: Gruvbox Dark" --icon ~/.config/mako/success.png;;
     "Nord Dark") 
         cp $HOME/Documents/dotfiles/config/fuzzel/themes/nord-dark.ini $HOME/Documents/dotfiles/config/fuzzel/config.ini; 
         cp $HOME/Documents/dotfiles/config/hypr/themes/nord-dark.lua $HOME/Documents/dotfiles/config/hypr/hyprland.lua;
@@ -54,5 +57,6 @@ case "$chosen" in
         makoctl reload;
         killall waybar; waybar &
         gsettings set org.gnome.desktop.interface gtk-theme Nordic-darker;
-        gsettings set org.gnome.desktop.wm.preferences theme Nordic-darker;;
+        gsettings set org.gnome.desktop.wm.preferences theme Nordic-darker
+        notify-send "Theme Change" "Applied: Nord Dark" --icon ~/.config/mako/success.png;;
 esac
