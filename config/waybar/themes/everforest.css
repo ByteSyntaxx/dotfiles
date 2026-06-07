@@ -1,7 +1,16 @@
 * {
+    all: unset;
+    font-family: "JetBrainsMono";
+}
+
+*.icon {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+*.text {
     font-size: 14px;
     font-weight: bold;
-    font-family: "JetBrainsMono";
 }
 
 #waybar {
@@ -90,6 +99,12 @@ button {
     border-radius: 10px;
     margin: 5px;
     padding: 2px;
+}
+
+#workspaces button {
+    padding: 0 6px;
+    font-size: 14px;
+    font-weight: bold;    
 }
 
 #workspaces button.active {

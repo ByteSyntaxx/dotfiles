@@ -1,7 +1,16 @@
 * {
+    all: unset;
+    font-family: "JetBrainsMono";
+}
+
+*.icon {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+*.text {
     font-size: 14px;
     font-weight: bold;
-    font-family: "JetBrainsMono";
 }
 
 #waybar {
