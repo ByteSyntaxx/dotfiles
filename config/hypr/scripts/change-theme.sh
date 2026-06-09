@@ -9,7 +9,7 @@ case "$chosen" in
         cp $HOME/Documents/dotfiles/config/hypr/themes/catppuccin-hyprlock.conf $HOME/Documents/dotfiles/config/hypr/hyprlock.conf;
         cp $HOME/Documents/dotfiles/config/hypr/themes/catppuccin-hyprpaper.conf $HOME/Documents/dotfiles/config/hypr/hyprpaper.conf;
         cp $HOME/Documents/dotfiles/config/mako/themes/catppuccin $HOME/Documents/dotfiles/config/mako/config;
-        cp $HOME/Documents/dotfiles/config/waybar/themes/catppuccin.css $HOME/Documents/dotfiles/config/waybar/style.css;
+        cp $HOME/Documents/dotfiles/config/waybar/theme/catppuccin.css $HOME/Documents/dotfiles/config/waybar/theme/colors.css;
         cp $HOME/Documents/dotfiles/config/kitty/themes/Catppuccin-Mocha.conf $HOME/Documents/dotfiles/config/kitty/theme.conf;
         hyprctl reload;
         makoctl reload;
@@ -23,7 +23,7 @@ case "$chosen" in
         cp $HOME/Documents/dotfiles/config/hypr/themes/everforest-hyprlock.conf $HOME/Documents/dotfiles/config/hypr/hyprlock.conf;
         cp $HOME/Documents/dotfiles/config/hypr/themes/everforest-hyprpaper.conf $HOME/Documents/dotfiles/config/hypr/hyprpaper.conf;
         cp $HOME/Documents/dotfiles/config/mako/themes/everforest $HOME/Documents/dotfiles/config/mako/config;
-        cp $HOME/Documents/dotfiles/config/waybar/themes/everforest.css $HOME/Documents/dotfiles/config/waybar/style.css;
+        cp $HOME/Documents/dotfiles/config/waybar/theme/everforest.css $HOME/Documents/dotfiles/config/waybar/theme/colors.css;
         cp $HOME/Documents/dotfiles/config/kitty/themes/Everforest-Dark-Hard.conf $HOME/Documents/dotfiles/config/kitty/theme.conf;
         hyprctl reload;
         makoctl reload;
@@ -37,7 +37,7 @@ case "$chosen" in
         cp $HOME/Documents/dotfiles/config/hypr/themes/gruvbox-dark-hyprlock.conf $HOME/Documents/dotfiles/config/hypr/hyprlock.conf;
         cp $HOME/Documents/dotfiles/config/hypr/themes/gruvbox-dark-hyprpaper.conf $HOME/Documents/dotfiles/config/hypr/hyprpaper.conf;
         cp $HOME/Documents/dotfiles/config/mako/themes/gruvbox-dark $HOME/Documents/dotfiles/config/mako/config;
-        cp $HOME/Documents/dotfiles/config/waybar/themes/gruvbox-dark.css $HOME/Documents/dotfiles/config/waybar/style.css;
+        cp $HOME/Documents/dotfiles/config/waybar/theme/gruvbox.css $HOME/Documents/dotfiles/config/waybar/theme/colors.css;
         cp $HOME/Documents/dotfiles/config/kitty/themes/Gruvbox-Dark-Hard.conf $HOME/Documents/dotfiles/config/kitty/theme.conf;
         hyprctl reload;
         makoctl reload;
@@ -51,7 +51,7 @@ case "$chosen" in
         cp $HOME/Documents/dotfiles/config/hypr/themes/nord-dark-hyprlock.conf $HOME/Documents/dotfiles/config/hypr/hyprlock.conf;
         cp $HOME/Documents/dotfiles/config/hypr/themes/nord-dark-hyprpaper.conf $HOME/Documents/dotfiles/config/hypr/hyprpaper.conf;
         cp $HOME/Documents/dotfiles/config/mako/themes/nord-dark $HOME/Documents/dotfiles/config/mako/config;
-        cp $HOME/Documents/dotfiles/config/waybar/themes/nord-dark.css $HOME/Documents/dotfiles/config/waybar/style.css;
+        cp $HOME/Documents/dotfiles/config/waybar/theme/nord.css $HOME/Documents/dotfiles/config/waybar/theme/colors.css;
         cp $HOME/Documents/dotfiles/config/kitty/themes/Nord-Dark.conf $HOME/Documents/dotfiles/config/kitty/theme.conf;
         hyprctl reload;
         makoctl reload;
