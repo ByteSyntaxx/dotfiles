@@ -101,6 +101,12 @@ button {
     padding: 2px;
 }
 
+#workspaces button {
+    padding: 0 6px;
+    font-size: 14px;
+    font-weight: bold;    
+}
+
 #workspaces button.active {
     color: #cba6f7;
 }
