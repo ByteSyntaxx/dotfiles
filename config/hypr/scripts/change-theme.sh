@@ -14,6 +14,7 @@ case "$chosen" in
         hyprctl reload;
         makoctl reload;
         killall waybar; waybar &
+        killall hyprpaper; hyprpaper &
         gsettings set org.gnome.desktop.interface gtk-theme Catppuccin-Dark;
         gsettings set org.gnome.desktop.wm.preferences theme Catppuccin-Dark;
         notify-send "Theme Changed" "Applied: Catppuccin Mocha" --icon ~/.config/mako/success.png;;
@@ -28,6 +29,7 @@ case "$chosen" in
         hyprctl reload;
         makoctl reload;
         killall waybar; waybar &        
+        killall hyprpaper; hyprpaper &
         gsettings set org.gnome.desktop.interface gtk-theme Everforest-Dark-Medium;
         gsettings set org.gnome.desktop.wm.preferences theme Everforest-Dark-Medium
         notify-send "Theme Changed" "Applied: Everforest Dark" --icon ~/.config/mako/success.png;;
@@ -42,6 +44,7 @@ case "$chosen" in
         hyprctl reload;
         makoctl reload;
         killall waybar; waybar &
+        killall hyprpaper; hyprpaper &
         gsettings set org.gnome.desktop.interface gtk-theme Gruvbox-B-LB-Dark;
         gsettings set org.gnome.desktop.wm.preferences theme Gruvbox-B-LB-Dark
         notify-send "Theme Changed" "Applied: Gruvbox Dark" --icon ~/.config/mako/success.png;;
@@ -56,6 +59,7 @@ case "$chosen" in
         hyprctl reload;
         makoctl reload;
         killall waybar; waybar &
+        killall hyprpaper; hyprpaper &
         gsettings set org.gnome.desktop.interface gtk-theme Nordic-darker;
         gsettings set org.gnome.desktop.wm.preferences theme Nordic-darker
         notify-send "Theme Changed" "Applied: Nord Dark" --icon ~/.config/mako/success.png;;
