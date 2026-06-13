@@ -58,16 +58,6 @@
             "8": "8",
             "9": "8",
             "10": "10"
-        },
-        "on-click": "activate",
-        "persistent-workspaces": {
-            "eDP-1": [
-                1,
-                2,
-                3,
-                9,
-                10
-            ]
         }
     },
     // Right Modules
@@ -87,22 +77,8 @@
         "tooltip": false
     },
     "clock#text": {
-        "format": "{:%I:%M %p}",
-        "format-alt": "{:%a, %d %b}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "calendar": {
-            "mode": "month",
-            "mode-mon-col": 3,
-            "weeks-pos": "right",
-            "on-scroll": 1,
-            "format": {
-                "months": "<span color='#A7C080'><b>{}</b></span>",
-                "days": "<span color='#D699B6'>{}</span>",
-                "weeks": "<span color='#7FBBB3'><b>W{}</b></span>",
-                "weekdays": "<span color='#DBBC7F'><b>{}</b></span>",
-                "today": "<span color='#E67E80'><b><u>{}</u></b></span>"
-            }
-        }
+        "format": "{:%H:%M <span color=\"#E6E2CC\">| %a %d %b</span>}",
+        "tooltip": false
     },
     "pulseaudio#icon": {
         "format": "{icon}",
