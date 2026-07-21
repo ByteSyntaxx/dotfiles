@@ -14,7 +14,7 @@ hl.config({
             enabled      = true,
             range        = 10,
             render_power = 100,
-            color        = "0xFFCBA6F7",
+            color        = "0xFFEBA0AC",
             color_inactive = "0xFF181825"
         },
 
@@ -33,7 +33,7 @@ hl.config({
         gaps_out = 5,
         border_size = 3,
         col = {
-            active_border = {colors={"0xFFCBA6F7"}},
+            active_border = {colors={"0xFFEBA0AC"}},
             inactive_border = {colors={"0xFF181825"}}
         },
         layout = "master"
