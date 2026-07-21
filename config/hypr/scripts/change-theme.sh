@@ -1,15 +1,30 @@
 #!/usr/bin/env bash
 
-chosen=$(printf "Catppuccin Mocha\nEverforest Dark\nGruvbox Dark\nNord Dark" | fuzzel -d --config=$HOME/.config/fuzzel/config.ini)
+chosen=$(printf "Catppuccin Mocha Blue\nCatppuccin Mocha Red\nEverforest Dark\nGruvbox Dark\nNord Dark" | fuzzel -d --config=$HOME/.config/fuzzel/config.ini)
 
 case "$chosen" in 
-    "Catppuccin Mocha") 
-        cp $HOME/Documents/dotfiles/config/fuzzel/themes/catppuccin.ini $HOME/Documents/dotfiles/config/fuzzel/config.ini; 
-        cp $HOME/Documents/dotfiles/config/hypr/themes/catppuccin.lua $HOME/Documents/dotfiles/config/hypr/hyprland.lua;
+    "Catppuccin Mocha Blue") 
+        cp $HOME/Documents/dotfiles/config/fuzzel/themes/catppuccin-blue.ini $HOME/Documents/dotfiles/config/fuzzel/config.ini; 
+        cp $HOME/Documents/dotfiles/config/hypr/themes/catppuccin-blue.lua $HOME/Documents/dotfiles/config/hypr/hyprland.lua;
         cp $HOME/Documents/dotfiles/config/hypr/themes/catppuccin-hyprlock.conf $HOME/Documents/dotfiles/config/hypr/hyprlock.conf;
         cp $HOME/Documents/dotfiles/config/hypr/themes/catppuccin-hyprpaper.conf $HOME/Documents/dotfiles/config/hypr/hyprpaper.conf;
-        cp $HOME/Documents/dotfiles/config/mako/themes/catppuccin $HOME/Documents/dotfiles/config/mako/config;
-        cp $HOME/Documents/dotfiles/config/waybar/theme/catppuccin.css $HOME/Documents/dotfiles/config/waybar/theme/colors.css;
+        cp $HOME/Documents/dotfiles/config/mako/themes/catppuccin-blue $HOME/Documents/dotfiles/config/mako/config;
+        cp $HOME/Documents/dotfiles/config/waybar/theme/catppuccin-blue.css $HOME/Documents/dotfiles/config/waybar/theme/colors.css;
+        cp $HOME/Documents/dotfiles/config/kitty/themes/Catppuccin-Mocha.conf $HOME/Documents/dotfiles/config/kitty/theme.conf;
+        hyprctl reload;
+        makoctl reload;
+        killall waybar; waybar &
+        killall hyprpaper; hyprpaper &
+        gsettings set org.gnome.desktop.interface gtk-theme Catppuccin-Dark;
+        gsettings set org.gnome.desktop.wm.preferences theme Catppuccin-Dark;
+        notify-send "Theme Changed" "Applied: Catppuccin Mocha" --icon ~/.config/mako/success.png;;
+    "Catppuccin Mocha Red") 
+        cp $HOME/Documents/dotfiles/config/fuzzel/themes/catppuccin-red.ini $HOME/Documents/dotfiles/config/fuzzel/config.ini; 
+        cp $HOME/Documents/dotfiles/config/hypr/themes/catppuccin-red.lua $HOME/Documents/dotfiles/config/hypr/hyprland.lua;
+        cp $HOME/Documents/dotfiles/config/hypr/themes/catppuccin-hyprlock.conf $HOME/Documents/dotfiles/config/hypr/hyprlock.conf;
+        cp $HOME/Documents/dotfiles/config/hypr/themes/catppuccin-hyprpaper.conf $HOME/Documents/dotfiles/config/hypr/hyprpaper.conf;
+        cp $HOME/Documents/dotfiles/config/mako/themes/catppuccin-red $HOME/Documents/dotfiles/config/mako/config;
+        cp $HOME/Documents/dotfiles/config/waybar/theme/catppuccin-red.css $HOME/Documents/dotfiles/config/waybar/theme/colors.css;
         cp $HOME/Documents/dotfiles/config/kitty/themes/Catppuccin-Mocha.conf $HOME/Documents/dotfiles/config/kitty/theme.conf;
         hyprctl reload;
         makoctl reload;
