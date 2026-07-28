@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-chosen=$(printf "Catppuccin Mocha Blue\nCatppuccin Mocha Red\nEverforest Dark\nGruvbox Dark\nNord Dark" | fuzzel -d --config=$HOME/.config/fuzzel/config.ini)
+chosen=$(printf "Catppuccin Mocha Blue\nCatppuccin Mocha Maroon\nEverforest Dark\nGruvbox Dark\nNord Dark" | fuzzel -d --config=$HOME/.config/fuzzel/config.ini)
 
 case "$chosen" in 
     "Catppuccin Mocha Blue") 
@@ -15,10 +15,10 @@ case "$chosen" in
         makoctl reload;
         killall waybar; waybar &
         killall hyprpaper; hyprpaper &
-        gsettings set org.gnome.desktop.interface gtk-theme Catppuccin-Dark;
-        gsettings set org.gnome.desktop.wm.preferences theme Catppuccin-Dark;
+        gsettings set org.gnome.desktop.interface gtk-theme Catppuccin-Mocha-Blue;
+        gsettings set org.gnome.desktop.wm.preferences theme Catppuccin-Mocha-Blue;
         notify-send "Theme Changed" "Applied: Catppuccin Mocha" --icon ~/.config/mako/success.png;;
-    "Catppuccin Mocha Red") 
+    "Catppuccin Mocha Maroon") 
         cp $HOME/Documents/dotfiles/config/fuzzel/themes/catppuccin-red.ini $HOME/Documents/dotfiles/config/fuzzel/config.ini; 
         cp $HOME/Documents/dotfiles/config/hypr/themes/catppuccin-red.lua $HOME/Documents/dotfiles/config/hypr/hyprland.lua;
         cp $HOME/Documents/dotfiles/config/hypr/themes/catppuccin-hyprlock.conf $HOME/Documents/dotfiles/config/hypr/hyprlock.conf;
@@ -30,8 +30,8 @@ case "$chosen" in
         makoctl reload;
         killall waybar; waybar &
         killall hyprpaper; hyprpaper &
-        gsettings set org.gnome.desktop.interface gtk-theme Catppuccin-Dark;
-        gsettings set org.gnome.desktop.wm.preferences theme Catppuccin-Dark;
+        gsettings set org.gnome.desktop.interface gtk-theme Catppuccin-Mocha-Maroon;
+        gsettings set org.gnome.desktop.wm.preferences theme Catppuccin-Mocha-Maroon;
         notify-send "Theme Changed" "Applied: Catppuccin Mocha" --icon ~/.config/mako/success.png;;
     "Everforest Dark") 
         cp $HOME/Documents/dotfiles/config/fuzzel/themes/everforest.ini $HOME/Documents/dotfiles/config/fuzzel/config.ini; 

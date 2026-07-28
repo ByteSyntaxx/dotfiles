@@ -1,7 +1,7 @@
 @import 'theme/colors.css';
 
 * {
-    all: unset;
+    /*all: unset;*/
     font-family: "JetBrainsMono";
 }
 
@@ -34,7 +34,6 @@ button {
 #network.icon {
     background-color: @blue;
     color: @background;
-    /*padding: 0 12px;*/
     border-radius: 10px 0 0 10px;
     margin: 5px 0 5px 5px;
 }
@@ -42,7 +41,6 @@ button {
 #network.icon.disconnected {
     background-color: @red;
     color: @background;
-    /*padding: 0 12px;*/
     border-radius: 10px 0 0 10px;
     margin: 5px 0 5px 5px;
 }
@@ -66,7 +64,6 @@ button {
 #disk.icon {
     background-color: @aqua;
     color: @background;
-    /*padding: 0 12px;*/
     border-radius: 10px 0 0 10px;
     margin: 5px 0 5px 5px;
 }
@@ -105,7 +102,7 @@ button {
 }
 
 #workspaces button {
-    padding: 0 6px;
+    padding: 0 3px;
     font-size: 14px;
     font-weight: bold;    
 }
@@ -118,7 +115,6 @@ button {
 #cpu.icon {
     background-color: @green;
     color: @background;
-    /*padding: 0 10px;*/
     border-radius: 10px 0 0 10px;
     margin: 5px 0 5px 5px;
 }
@@ -134,7 +130,6 @@ button {
 #clock.icon {
     background-color: @aqua;
     color: @background;
-    /*padding: 0 12px;*/
     border-radius: 10px 0 0 10px;
     margin: 5px 0 5px 5px;
 }
@@ -150,7 +145,6 @@ button {
 #pulseaudio.icon {
     background-color: @blue;
     color: @background;
-    /*padding: 0 12px;*/
     border-radius: 10px 0 0 10px;
     margin: 5px 0 5px 5px;
 }
@@ -166,7 +160,6 @@ button {
 #pulseaudio.icon.muted {
     background-color: @red;
     color: @background;
-    /*padding: 0 12px;*/
     border-radius: 10px 0 0 10px;
     margin: 5px 0 5px 5px;
 }
